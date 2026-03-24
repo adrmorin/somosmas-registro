@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Página de registro para el Movimiento Somos+. Únete a nosotros por una Cuba democrática y próspera.">
+  <title>Registro - Somos+</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a href="https://www.somosmascuba.com/" class="header__logo">
+        <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="40" height="40" style="border-radius: 4px;">
+        <span>Somos+</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="registration">
+      <div class="registration__banner">
+        <img src="./assets/header.jpg" alt="Somos+ Banner" class="registration__banner-img">
+      </div>
+      <div class="registration__header">
+        <h1 class="registration__title">Súmate a Somos+</h1>
+        <p class="registration__subtitle">Completa el siguiente formulario para formar parte del movimiento y trabajar
+          juntos por el futuro de Cuba.</p>
+      </div>
+
+      <form id="registration-form" class="form">
+        <div class="form__row--two">
+          <div class="form__group">
+            <label for="nombre" class="form__label">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" class="form__input" required placeholder="Tu nombre">
+          </div>
+          <div class="form__group">
+            <label for="apellidos" class="form__label">Apellidos *</label>
+            <input type="text" id="apellidos" name="apellidos" class="form__input" required placeholder="Tus apellidos">
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="email" class="form__label">Email *</label>
+          <input type="email" id="email" name="email" class="form__input" required placeholder="ejemplo@correo.com">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">¿Estás en Cuba y tu correo es @nauta.cu?</label>
+          <div class="form__checkbox-group">
+            <label class="form__checkbox-item">
+              <input type="radio" name="nauta" value="si"> Sí
+            </label>
+            <label class="form__checkbox-item">
+              <input type="radio" name="nauta" value="no" checked> No
+            </label>
+          </div>
+        </div>
+
+        <div class="form__row--two">
+          <div class="form__group">
+            <label for="telefono" class="form__label">Teléfono de Contacto</label>
+            <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="+prefijo número">
+          </div>
+          <div class="form__group">
+            <label for="mes_nacimiento" class="form__label">Mes de Nacimiento</label>
+            <select id="mes_nacimiento" name="mes_nacimiento" class="form__select">
+              <option value="">Selecciona un mes</option>
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="otras_formas_contacto" class="form__label">Otras formas de contacto</label>
+          <textarea id="otras_formas_contacto" name="otras_formas_contacto" class="form__textarea"
+            placeholder="WhatsApp, Telegram, etc."></textarea>
+        </div>
+
+        <div class="form__row--two">
+          <div class="form__group">
+            <label for="pais" class="form__label">País de residencia *</label>
+            <select id="pais" name="pais" class="form__select" required>
+              <option value="">Selecciona un país</option>
+              <option value="Cuba">Cuba</option>
+              <option value="USA">EE.UU.</option>
+              <option value="España">España</option>
+              <option value="México">México</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="ciudad" class="form__label">Ciudad de residencia *</label>
+            <input type="text" id="ciudad" name="ciudad" class="form__input" required placeholder="Tu ciudad">
+          </div>
+        </div>
+
+        <div class="form__row--two">
+          <div class="form__group">
+            <label for="profesion" class="form__label">Profesión</label>
+            <input type="text" id="profesion" name="profesion" class="form__input" placeholder="Tu profesión">
+          </div>
+          <div class="form__group">
+            <label for="grupo_trabajo" class="form__label">Grupo de Trabajo interesado</label>
+            <select id="grupo_trabajo" name="grupo_trabajo" class="form__select">
+              <option value="">Selecciona un grupo</option>
+              <option value="comunicacion">Comunicación</option>
+              <option value="tecnologia">Tecnología</option>
+              <option value="organizacion">Organización</option>
+              <option value="derechos_humanos">Derechos Humanos</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="ayuda" class="form__label">¿Qué ayuda específica puedes aportar?</label>
+          <textarea id="ayuda" name="ayuda" class="form__textarea"
+            placeholder="Describe cómo quieres colaborar..."></textarea>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Idioma(s)</label>
+          <div class="form__checkbox-group">
+            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="español"> Español</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="ingles"> Inglés</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="frances"> Francés</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="otro"> Otros</label>
+          </div>
+        </div>
+
+        <div class="form__row--two">
+          <div class="form__group">
+            <label for="twitter" class="form__label">Perfil de Twitter</label>
+            <input type="text" id="twitter" name="twitter" class="form__input" placeholder="@usuario o URL">
+          </div>
+          <div class="form__group">
+            <label for="facebook" class="form__label">Perfil de Facebook</label>
+            <input type="text" id="facebook" name="facebook" class="form__input" placeholder="URL del perfil">
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="motivacion" class="form__label">Motivación *</label>
+          <textarea id="motivacion" name="motivacion" class="form__textarea" required
+            placeholder="¿Por qué quieres unirte a nosotros?"></textarea>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">¿De qué manera deseas que mantengamos nuestra relación?</label>
+          <div class="form__checkbox-group">
+            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="email"> Email</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="whatsapp"> WhatsApp</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="telegram"> Telegram</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="llamada"> Llamada</label>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Suscribirme a:</label>
+          <div class="form__checkbox-group">
+            <label class="form__checkbox-item"><input type="checkbox" name="suscripcion" value="boletin"> Boletín
+              semanal</label>
+            <label class="form__checkbox-item"><input type="checkbox" name="suscripcion" value="noticias"> Noticias de
+              Cuba</label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__button">Enviar Registro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer container"
+    style="text-align: center; color: var(--light-text); padding-block: var(--spacing-lg);">
+    <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+    <p style="font-size: 0.8rem; margin-top: var(--spacing-sm);">Al registrarte, aceptas recibir comunicaciones de
+      nuestro equipo.</p>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+
+</html>

@@ -66,6 +66,8 @@ html:focus-within {
 
 body {
     min-height: 100vh;
+    padding-top: 80px;
+    /* Space for fixed header */
     text-rendering: optimizeSpeed;
     line-height: 1.6;
     font-family: var(--font-family);
@@ -103,7 +105,8 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(26, 35, 126, 0.6);
+    background: rgba(26, 35, 126, 0.8);
+    /* 80% opacity */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
@@ -116,6 +119,8 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
 }
 
 .header__logo {
@@ -130,7 +135,8 @@ h3 {
 
 .header__logo span {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    /* Decreased from 1.5rem */
     color: var(--white);
     letter-spacing: -0.5px;
 }
@@ -139,12 +145,20 @@ h3 {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: nowrap;
+    /* Ensure all on one line */
 }
 
 .nav__link {
+    text-decoration: none;
+    position: relative;
+    /* Required for the ::after hover animation */
     color: var(--white);
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    /* Prevent multi-word links from wrapping */
+    /* Decreased from 0.9rem */
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 0.5rem 1rem;
@@ -307,14 +321,28 @@ h3 {
     border-bottom: 2px solid #e0e0e0;
     padding: 0.75rem 0;
     background: transparent;
-    transition: border-bottom-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:focus,
 .form__select:focus,
 .form__textarea:focus {
     outline: none;
-    border-bottom-color: var(--accent-orange);
+    border-bottom-color: var(--primary-blue);
+    box-shadow: 0 8px 15px -10px rgba(26, 35, 126, 0.4);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--accent-orange);
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    transform: scale(1.35);
 }
 
 .form__textarea {
@@ -355,6 +383,46 @@ h3 {
 .form__button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 109, 0, 0.4);
+}
+
+/* Outline Button Animation */
+.btn-outline {
+    background: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-blue);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: -1;
+}
+
+.btn-outline:hover {
+    color: var(--white);
+    border-color: var(--primary-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(26, 35, 126, 0.2);
+}
+
+.btn-outline:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 /* Homepage - Hero */
@@ -419,8 +487,32 @@ h3 {
 
 .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-    border-color: var(--accent-orange) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 0 0 2px rgba(255, 109, 0, 0.2);
+    border-color: transparent !important;
+}
+
+/* Coordinators Grid */
+.coordinators-grid .feature-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.coordinators-grid .feature-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/header_v2.png');
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 0.25;
+    /* 25% transparency requested */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.coordinators-grid .feature-card>* {
+    position: relative;
+    z-index: 2;
 }
 
 /* Glassmorphism utility */
@@ -447,7 +539,11 @@ h3 {
 .feature-card,
 .card,
 article,
-section .container>div {
+section .container>div,
+.hero__title,
+.hero__subtitle,
+.hero__actions,
+.registration {
     opacity: 0;
 }
 
@@ -462,6 +558,52 @@ section .container>div {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card__icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent-orange);
+}
+
+.feature-card__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    opacity: 0.2;
+    /* 20% transparency */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.feature-card__title,
+.feature-card__description {
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--accent-orange);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(255, 109, 0, 0.2);
 }
 
 .feature-card__icon img {
@@ -470,6 +612,11 @@ section .container>div {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--accent-orange);
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.feature-card:hover .feature-card__icon img {
+    transform: scale(1.15) rotate(5deg);
 }
 
 /* Homepage - News */
@@ -583,4 +730,26 @@ section .container>div {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+.nav__cta--donate {
+    background: var(--white);
+    color: var(--accent-orange);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    animation: pulse-donate 2s infinite ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.nav__cta--donate:hover {
+    transform: translateY(-2px) scale(1.05);
+    color: var(--accent-orange);
+}
+
+@keyframes pulse-donate {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
 }

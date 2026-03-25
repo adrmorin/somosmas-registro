@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  // Select elements to animate
-  const animateElements = document.querySelectorAll('.feature-card, .card, article, section .container > div');
+  // Select elements to animate (Cards, Hero text, and Sections)
+  const animateElements = document.querySelectorAll('.feature-card, .card, article, section .container > div, .hero__title, .hero__subtitle, .hero__actions, .registration');
   animateElements.forEach(el => observer.observe(el));
 });

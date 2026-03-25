@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Movimiento Político Somos+ Cuba. Colabora con nosotros y aporta a la causa por una transición democrática, la libertad y la prosperidad de todos los cubanos.">
+    <title>Colabora - Somos+ Cuba</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .colabora-hero {
+            position: relative;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #0d1645 100%);
+            color: var(--white);
+            padding: clamp(4rem, 10vw, 8rem) var(--spacing-md);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .colabora-hero__bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/header_v2.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            mix-blend-mode: overlay;
+            z-index: 0;
+        }
+
+        .colabora-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .colabora-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .colabora-hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 2;
+            padding-inline: var(--spacing-md);
+        }
+
+        .payment-card {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 3rem 2rem;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .payment-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+        }
+
+        .payment-card--highlight {
+            border: 2px solid var(--accent-orange);
+        }
+
+        .payment-card__badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 109, 0, 0.1);
+            color: var(--accent-orange);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+        }
+
+        .payment-card__icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .paypal-icon {
+            color: #003087;
+        }
+
+        .zelle-icon {
+            color: #741bdf;
+            font-weight: 800;
+            font-family: 'Arial Black', sans-serif;
+            font-style: italic;
+        }
+
+        .fb-icon {
+            color: #1877F2;
+        }
+
+        .payment-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .payment-card p {
+            color: var(--medium-text);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .email-highlight {
+            display: inline-block;
+            background: rgba(26, 35, 126, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin: 1rem 0;
+            word-break: break-all;
+        }
+
+        .donor-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Button specific animation for 'Animar este boton' */
+        .btn-donate-pulse {
+            animation: pulse-orange 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse-orange {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 109, 0, 0.6);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 109, 0, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 109, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./index.html" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+        <a href="./blog.html" class="nav__link">Blog</a>
+        <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos</a>
+        <a href="./clubes.html" class="nav__link">Clubes</a>
+        <a href="http://bajanda.live" class="nav__link">Paquetes</a>
+        <a href="#" class="nav__link">Documentos</a>
+        <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+        <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+            <a href="./colabora.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+            <span style="opacity: 0.3;">|</span>
+            <a href="./colabora-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+        </div>
+      </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="colabora-hero">
+            <div class="colabora-hero__bg"></div>
+            <div class="colabora-hero__content">
+                <h1>Apoya Nuestra Causa</h1>
+                <p>Tu contribución es fundamental para seguir trabajando por una transición democrática, la libertad y
+                    la prosperidad de todos los cubanos. Utilice una de las siguientes opciones.</p>
+            </div>
+        </section>
+
+        <div class="container" style="max-width: 1200px; margin-inline: auto; margin-bottom: 6rem;">
+            <div class="payment-grid">
+
+                <!-- PayPal Card -->
+                <article class="payment-card payment-card--highlight">
+                    <span class="payment-card__badge">Mejor Método</span>
+                    <div class="payment-card__icon paypal-icon">
+                        <i class="fa-brands fa-paypal"></i>
+                    </div>
+                    <h3>PayPal</h3>
+                    <p>La forma más sencilla y segura de enviar fondos. Puedes realizar donaciones con tarjeta de
+                        crédito, débito o tu balance de PayPal. También puedes establecer una aportación mensual.</p>
+                    <div class="email-highlight">info@somosmascuba.com</div>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Escoge «Enviar Dinero a Familiares y Amigos» (Send
+                        Money) e ingresa nuestro correo.</p>
+
+                    <div class="donor-options">
+                        <a href="https://paypal.me/somosmas" target="_blank" rel="noopener noreferrer"
+                            class="form__button btn-donate-pulse"
+                            style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                            <i class="fa-solid fa-heart"></i> DONAR AHORA
+                        </a>
+                        <a href="https://paypal.me/somosmas" target="_blank" rel="noopener noreferrer"
+                            class="form__button btn-outline"
+                            style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                            <i class="fa-solid fa-calendar-check"></i> DONACIÓN MENSUAL
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Zelle Card -->
+                <article class="payment-card">
+                    <div class="payment-card__icon zelle-icon">
+                        Zelle
+                    </div>
+                    <h3>Zelle</h3>
+                    <p>Disponible para residentes en Estados Unidos. Realiza tu aporte de forma rápida y sin comisiones
+                        extras directamente desde la aplicación oficial de tu banco a nuestra cuenta.</p>
+                    <div class="email-highlight">info@somosmascuba.com</div>
+
+                    <div style="margin-top: auto; padding-top: 2rem;">
+                        <p style="font-size: 0.9rem; font-weight: 600; color: var(--success-green); margin-bottom: 0;">
+                            <i class="fa-solid fa-check-circle"></i> Transferencia directa y sin cargo
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Facebook Card -->
+                <article class="payment-card">
+                    <div class="payment-card__icon fb-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Puedes donar desde tu propio perfil usando tu tarjeta de crédito. Simplemente dirígete a nuestra
+                        página oficial en Facebook y haz clic en el botón "Donar" habilitado para nuestra causa.</p>
+
+                    <div class="donor-options" style="margin-top: auto;">
+                        <a href="https://www.facebook.com/SomosMasCuba" target="_blank" rel="noopener noreferrer"
+                            class="form__button"
+                            style="background: #1877F2; border-color: #1877F2; display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                            <i class="fa-brands fa-facebook-f"></i> IR AL PERFIL
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav class="footer__nav container">
+            <a href="https://www.somosmascuba.com/ideas-y-principios/">IDEAS Y PRINCIPIOS</a>
+            <a href="https://www.somosmascuba.com/reglamento/">REGLAMENTO</a>
+            <a href="https://www.somosmascuba.com/">WEB OFICIAL</a>
+        </nav>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

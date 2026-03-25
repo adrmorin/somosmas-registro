@@ -5,194 +5,218 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Página de registro para el Movimiento Somos+. Únete a nosotros por una Cuba democrática y próspera.">
-  <title>Registro - Somos+</title>
+    content="Movimiento Político Somos+ Cuba. Trabajamos por una transición democrática, la libertad y la prosperidad de todos los cubanos. Súmate al cambio.">
+  <title>Somos+ Cuba - Libertad y Prosperidad</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__container">
-      <a href="https://www.somosmascuba.com/" class="header__logo">
-        <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="40" height="40" style="border-radius: 4px;">
+    <div class="header__container container">
+      <a href="./index.html" class="header__logo">
+        <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
         <span>Somos+</span>
       </a>
+      <nav class="header__nav">
+        <a href="./blog.html" class="nav__link">Blog</a>
+        <a href="./sumate.html" class="nav__link">Súmate</a>
+        <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos +</a>
+        <a href="https://www.somosmascuba.com/give/" class="nav__link" title="Colabora">Colabora</a>
+        <a href="./clubes.html" class="nav__link">Clubes</a>
+        <a href="http://bajanda.live" class="nav__link">Paquete</a>
+        <a href="#" class="nav__link">Documentos</a>
+        <div
+          style="display: flex; align-items: center; gap: 0.5rem; margin-left: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+          <a href="./index.html" class="nav__link"
+            style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+          <span style="opacity: 0.3;">|</span>
+          <a href="./index-en.html" class="nav__link" style="padding: 0; opacity: 0.6;">EN</a>
+        </div>
+        <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+        <a href="./sumate.html" class="nav__cta">UNIRSE</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="registration">
-      <div class="registration__banner">
-        <img src="./assets/header.jpg" alt="Somos+ Banner" class="registration__banner-img">
+  <main>
+    <!-- Dynamic Hero Section -->
+    <section class="hero">
+      <img src="./assets/hero_v3.png" alt="Havana Malecon at Sunset" class="hero__img">
+      <div class="hero__content container">
+        <img src="./assets/SOMOS-MAS-ElCambioEresTu-LOGO.png" alt="Somos+ - El Cambio Eres Tú"
+          style="max-width: 250px; height: auto; margin-bottom: 2rem; display: block; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));">
+        <span class="card__category" style="color: var(--white); opacity: 0.9;">MOVIMIENTO POLÍTICO</span>
+        <h1 class="hero__title">Somos el presente de Cuba</h1>
+        <p class="hero__subtitle">Trabajamos por una Cuba democrática, próspera y libre. Nuestra visión es
+          modernizar nuestras instituciones y empoderar a cada ciudadano cubano para construir su propio
+          futuro.</p>
+        <div class="hero__actions">
+          <a href="./sumate.html" class="form__button">EMPIEZA AQUÍ</a>
+          <a href="#principios"
+            style="margin-left: 1.5rem; color: var(--white); text-decoration: underline; font-weight: 600;">Leer
+            Manifiesto</a>
+        </div>
       </div>
-      <div class="registration__header">
-        <h1 class="registration__title">Súmate a Somos+</h1>
-        <p class="registration__subtitle">Completa el siguiente formulario para formar parte del movimiento y trabajar
-          juntos por el futuro de Cuba.</p>
+    </section>
+
+    <!-- Ideas y Principios -->
+    <section id="principios" class="features container" style="margin-top: var(--spacing-xl);">
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <img src="./assets/icon_ideas.png" alt="Ideas icon">
+        </div>
+        <h2 class="feature-card__title">Ideas y Principios</h2>
+        <p class="feature-card__description">Constituimos una alternativa para construir una sociedad moderna, basada en
+          el respeto a los derechos humanos y el libre mercado.</p>
       </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <img src="./assets/icon_democracia.png" alt="Democracia icon">
+        </div>
+        <h2 class="feature-card__title">Transparencia</h2>
+        <p class="feature-card__description">Mantenemos procesos de democracia interna y rendición de cuentas,
+          asegurando que cada voz dentro del movimiento sea escuchada.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <img src="./assets/icon_red.png" alt="Red Global icon">
+        </div>
+        <h2 class="feature-card__title">Red Internacional</h2>
+        <p class="feature-card__description">Unimos a cubanos en todo el mundo, coordinando esfuerzos para una
+          transición pacífica y legal a la democracia.</p>
+      </div>
+    </section>
 
-      <form id="registration-form" class="form">
-        <div class="form__row--two">
-          <div class="form__group">
-            <label for="nombre" class="form__label">Nombre *</label>
-            <input type="text" id="nombre" name="nombre" class="form__input" required placeholder="Tu nombre">
+    <!-- Proyecto Cuba / Transition Section -->
+    <section class="registration container"
+      style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: auto; background: var(--primary-blue); border-radius: 2rem; overflow: hidden; margin-top: var(--spacing-xl);">
+      <div class="registration__visual" style="padding: 4rem; min-height: 400px;">
+        <img src="./assets/hands_v2.png" alt="Unity Hands" class="registration__visual-img" style="opacity: 0.6;">
+        <div class="registration__quote" style="max-width: 100%;">
+          <cite style="color: var(--accent-orange); font-weight: 800; display: block; margin-bottom: 1rem;">PROYECTO
+            CUBA</cite>
+          <blockquote style="font-size: 2.5rem; line-height: 1.1;">Promoviendo la participación ciudadana en la
+            transición democrática.</blockquote>
+        </div>
+      </div>
+      <div
+        style="padding: 4rem; color: var(--white); display: flex; flex-direction: column; justify-content: center; background-color: var(--primary-blue);">
+        <h2 style="color: var(--white); font-weight: 800; margin-bottom: 1rem;">Ola Internacional de Apoyo</h2>
+        <p style="opacity: 0.9; font-size: 1.15rem;">El exilio cubano y organizaciones en Europa convocan a la firma del
+          'Proyecto Cuba' para asegurar un futuro de paz y legalidad durante el proceso de liberación.</p>
+        <a href="#" class="form__button"
+          style="background: var(--white); color: var(--primary-blue); margin-top: 2rem; width: fit-content; padding-inline: 3rem;">LEER
+          PROPUESTA</a>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container"
+      style="margin-block: var(--spacing-lg); text-align: center; background: #f8f9fa; padding: 4rem; border-radius: 2rem;">
+      <h2 style="color: var(--primary-blue); font-size: 2.2rem;">¿Listo para ser parte de la historia?</h2>
+      <p style="color: var(--medium-text); font-size: 1.1rem; margin-top: 1rem; max-width: 600px; margin-inline: auto;">
+        Únete a cientos de cubanos que ya están trabajando por un cambio real y pacífico.</p>
+      <a href="./sumate.html" class="form__button"
+        style="margin-top: 1.5rem; display: inline-block; padding-inline: 3rem;">SÚMATE AQUÍ</a>
+    </section>
+
+    <!-- Carta a los Jóvenes - SECCIÓN EDITORIAL COMPLETA -->
+    <section class="container" style="margin-block: var(--spacing-lg);">
+      <div
+        style="background: #f8f9fa; border-radius: 2rem; padding: var(--spacing-xl); display: grid; grid-template-columns: 300px 1fr; gap: var(--spacing-xl); align-items: start; border: 1px solid rgba(0,0,0,0.05);">
+        <div style="text-align: center;">
+          <img src="./assets/eliecer_real.png" alt="Ing. Eliecer L. Ávila Cicilia"
+            style="width: 280px; height: auto; border-radius: 1rem; box-shadow: var(--box-shadow); border: 4px solid var(--white);">
+          <h3 style="margin-top: 1.5rem; color: var(--primary-blue); margin-bottom: 0.25rem;">Eliecer Ávila</h3>
+          <p style="color: var(--accent-orange); font-weight: 700; font-size: 0.9rem; text-transform: uppercase;">Ing.
+            Presidente Somos+</p>
+        </div>
+        <div>
+          <h2 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 2.5rem;">Carta a los jóvenes cubanos
+          </h2>
+          <div
+            style="color: var(--dark-text); line-height: 1.7; font-size: 1.1rem; column-count: 1; margin-bottom: 2rem;">
+            <p style="font-weight: 700; font-size: 1.25rem; color: var(--primary-blue); margin-bottom: 1.5rem;">"Afirmo
+              que los cubanos podemos construir una de las sociedades más modernas, participativas y desarrolladas de
+              nuestro tiempo."</p>
+            <p>Nuestro país tiene todo lo que necesita para emprender el camino hacia el estado de bienestar. Pero como
+              joven me he preguntado muchas veces: ¿Qué sería mejor?</p>
+            <p
+              style="font-style: italic; color: var(--medium-text); border-left: 3px solid var(--accent-orange); padding-left: 1rem; margin-block: 1rem;">
+              ¿Acaso esperar a que la Dirección Histórica decida algún día tomar conciencia? ¿Acaso irme del país como
+              miles? ¿Hacerme cómplice de la clase dominante? ¿Hacerme el tonto e inventarme una felicidad efímera?</p>
+            <p>No me siento cómodo con ninguna variante. Mi conciencia no deja de gritarme. Tengo un deber, e intentar
+              que mi país despierte antes de que sea imposible alcanzar al resto del mundo.</p>
+            <p>Seguramente no soy el único. Miles de jóvenes se debaten entre las mismas dudas. Pero nos han dicho que
+              no podemos... todo eso es falso, las verdaderas barreras están en nuestras mentes.</p>
+            <p>Asumimos el reto y la responsabilidad: demostrar que aún existen personas que pueden levantar la bandera
+              de la esperanza y emprender la reconstrucción de la patria.</p>
           </div>
-          <div class="form__group">
-            <label for="apellidos" class="form__label">Apellidos *</label>
-            <input type="text" id="apellidos" name="apellidos" class="form__input" required placeholder="Tus apellidos">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+            <p style="font-weight: 700; color: var(--primary-blue); margin: 0;">¡Paz, desarrollo y vida para nuestro
+              pueblo!</p>
+            <img src="./assets/eliecer_final_signature.png" alt="Firma Eliecer Ávila"
+              style="height: 110px; width: auto; mix-blend-mode: multiply; margin-top: 1rem; margin-bottom: 0.5rem;">
+            <p style="font-size: 0.9rem; font-weight: 600; color: var(--medium-text); margin: 0;">Ing. Eliecer L. Ávila
+              Cicilia</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="form__group">
-          <label for="email" class="form__label">Email *</label>
-          <input type="email" id="email" name="email" class="form__input" required placeholder="ejemplo@correo.com">
-        </div>
-
-        <div class="form__group">
-          <label class="form__label">¿Estás en Cuba y tu correo es @nauta.cu?</label>
-          <div class="form__checkbox-group">
-            <label class="form__checkbox-item">
-              <input type="radio" name="nauta" value="si"> Sí
-            </label>
-            <label class="form__checkbox-item">
-              <input type="radio" name="nauta" value="no" checked> No
-            </label>
+    <!-- News/Updates Section -->
+    <section class="news-section container">
+      <h2 class="section-title">Últimas del Blog</h2>
+      <div class="news-grid">
+        <article class="card">
+          <img src="./assets/blog_proyecto_cuba.png" alt="Proyecto Cuba" class="card__img">
+          <div class="card__content">
+            <span class="card__category">POLÍTICA</span>
+            <h3 class="card__title">Firma del 'Proyecto Cuba': Hacia una transición democrática</h3>
           </div>
-        </div>
-
-        <div class="form__row--two">
-          <div class="form__group">
-            <label for="telefono" class="form__label">Teléfono de Contacto</label>
-            <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="+prefijo número">
+        </article>
+        <article class="card">
+          <img src="./assets/blog_protestas.png" alt="Protestas Internacionales" class="card__img">
+          <div class="card__content">
+            <span class="card__category">SOCIEDAD</span>
+            <h3 class="card__title">Ola internacional de protestas en apoyo al pueblo de Cuba</h3>
           </div>
-          <div class="form__group">
-            <label for="mes_nacimiento" class="form__label">Mes de Nacimiento</label>
-            <select id="mes_nacimiento" name="mes_nacimiento" class="form__select">
-              <option value="">Selecciona un mes</option>
-              <option value="1">Enero</option>
-              <option value="2">Febrero</option>
-              <option value="3">Marzo</option>
-              <option value="4">Abril</option>
-              <option value="5">Mayo</option>
-              <option value="6">Junio</option>
-              <option value="7">Julio</option>
-              <option value="8">Agosto</option>
-              <option value="9">Septiembre</option>
-              <option value="10">Octubre</option>
-              <option value="11">Noviembre</option>
-              <option value="12">Diciembre</option>
-            </select>
+        </article>
+        <article class="card">
+          <img src="./assets/blog_libertad.png" alt="Libertad de Expresión" class="card__img">
+          <div class="card__content">
+            <span class="card__category">DERECHOS</span>
+            <h3 class="card__title">Protesta contra el acoso a la libertad de expresión</h3>
           </div>
-        </div>
-
-        <div class="form__group">
-          <label for="otras_formas_contacto" class="form__label">Otras formas de contacto</label>
-          <textarea id="otras_formas_contacto" name="otras_formas_contacto" class="form__textarea"
-            placeholder="WhatsApp, Telegram, etc."></textarea>
-        </div>
-
-        <div class="form__row--two">
-          <div class="form__group">
-            <label for="pais" class="form__label">País de residencia *</label>
-            <select id="pais" name="pais" class="form__select" required>
-              <option value="">Selecciona un país</option>
-              <option value="Cuba">Cuba</option>
-              <option value="USA">EE.UU.</option>
-              <option value="España">España</option>
-              <option value="México">México</option>
-              <option value="Otro">Otro</option>
-            </select>
-          </div>
-          <div class="form__group">
-            <label for="ciudad" class="form__label">Ciudad de residencia *</label>
-            <input type="text" id="ciudad" name="ciudad" class="form__input" required placeholder="Tu ciudad">
-          </div>
-        </div>
-
-        <div class="form__row--two">
-          <div class="form__group">
-            <label for="profesion" class="form__label">Profesión</label>
-            <input type="text" id="profesion" name="profesion" class="form__input" placeholder="Tu profesión">
-          </div>
-          <div class="form__group">
-            <label for="grupo_trabajo" class="form__label">Grupo de Trabajo interesado</label>
-            <select id="grupo_trabajo" name="grupo_trabajo" class="form__select">
-              <option value="">Selecciona un grupo</option>
-              <option value="comunicacion">Comunicación</option>
-              <option value="tecnologia">Tecnología</option>
-              <option value="organizacion">Organización</option>
-              <option value="derechos_humanos">Derechos Humanos</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form__group">
-          <label for="ayuda" class="form__label">¿Qué ayuda específica puedes aportar?</label>
-          <textarea id="ayuda" name="ayuda" class="form__textarea"
-            placeholder="Describe cómo quieres colaborar..."></textarea>
-        </div>
-
-        <div class="form__group">
-          <label class="form__label">Idioma(s)</label>
-          <div class="form__checkbox-group">
-            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="español"> Español</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="ingles"> Inglés</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="frances"> Francés</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="otro"> Otros</label>
-          </div>
-        </div>
-
-        <div class="form__row--two">
-          <div class="form__group">
-            <label for="twitter" class="form__label">Perfil de Twitter</label>
-            <input type="text" id="twitter" name="twitter" class="form__input" placeholder="@usuario o URL">
-          </div>
-          <div class="form__group">
-            <label for="facebook" class="form__label">Perfil de Facebook</label>
-            <input type="text" id="facebook" name="facebook" class="form__input" placeholder="URL del perfil">
-          </div>
-        </div>
-
-        <div class="form__group">
-          <label for="motivacion" class="form__label">Motivación *</label>
-          <textarea id="motivacion" name="motivacion" class="form__textarea" required
-            placeholder="¿Por qué quieres unirte a nosotros?"></textarea>
-        </div>
-
-        <div class="form__group">
-          <label class="form__label">¿De qué manera deseas que mantengamos nuestra relación?</label>
-          <div class="form__checkbox-group">
-            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="email"> Email</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="whatsapp"> WhatsApp</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="telegram"> Telegram</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="llamada"> Llamada</label>
-          </div>
-        </div>
-
-        <div class="form__group">
-          <label class="form__label">Suscribirme a:</label>
-          <div class="form__checkbox-group">
-            <label class="form__checkbox-item"><input type="checkbox" name="suscripcion" value="boletin"> Boletín
-              semanal</label>
-            <label class="form__checkbox-item"><input type="checkbox" name="suscripcion" value="noticias"> Noticias de
-              Cuba</label>
-          </div>
-        </div>
-
-        <button type="submit" class="form__button">Enviar Registro</button>
-      </form>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://www.somosmascuba.com/" class="form__button"
+          style="background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); box-shadow: none;">VER
+          TODAS LAS NOTICIAS</a>
+      </div>
     </section>
   </main>
 
-  <footer class="footer container"
-    style="text-align: center; color: var(--light-text); padding-block: var(--spacing-lg);">
-    <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
-    <p style="font-size: 0.8rem; margin-top: var(--spacing-sm);">Al registrarte, aceptas recibir comunicaciones de
-      nuestro equipo.</p>
+  <footer class="footer">
+    <div class="footer__container container">
+      <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center;">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <nav class="footer__nav container">
+      <a href="https://www.somosmascuba.com/ideas-y-principios/">IDEAS Y PRINCIPIOS</a>
+      <a href="https://www.somosmascuba.com/reglamento/">REGLAMENTO</a>
+      <a href="https://www.somosmascuba.com/">WEB OFICIAL</a>
+    </nav>
   </footer>
 
   <script src="./main.js" type="module"></script>

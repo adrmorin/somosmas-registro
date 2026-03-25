@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Registration page for the Somos+ Movement. Join us for a democratic and prosperous Cuba.">
+    <title>Join Us - Somos+</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./index-en.html" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Somos+ Logo" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav">
+                <a href="./blog-en.html" class="nav__link">Blog</a>
+                <a href="./sumate-en.html" class="nav__link">Join Us</a>
+                <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">About Us</a>
+                <a href="https://www.somosmascuba.com/give/" class="nav__link">Donate</a>
+                <a href="./clubes-en.html" class="nav__link">Clubs</a>
+                <div
+                    style="display: flex; align-items: center; gap: 0.5rem; margin-left: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./sumate.html" class="nav__link" style="padding: 0; opacity: 0.6;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./sumate-en.html" class="nav__link"
+                        style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
+                </div>
+                <a href="./sumate-en.html" class="nav__cta">JOIN NOW</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="registration">
+            <div class="registration__visual">
+                <img src="./assets/header.jpg" alt="Somos+ Movement" class="registration__visual-img">
+                <div class="registration__visual-overlay"></div>
+                <div class="registration__quote">
+                    <blockquote>"Change is not a promise, it is our collective action."</blockquote>
+                    <cite>We are the present</cite>
+                </div>
+            </div>
+
+            <div class="registration__content">
+                <h1 class="registration__title">Join the Change</h1>
+                <p class="registration__subtitle">Complete your registration to start collaborating.</p>
+
+                <form id="registration-form" class="form">
+                    <div class="form__row--two">
+                        <div class="form__group">
+                            <label for="nombre" class="form__label">Full Name *</label>
+                            <input type="text" id="nombre" name="nombre" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email *</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                    </div>
+
+                    <div class="form__row--two">
+                        <div class="form__group">
+                            <label for="pais" class="form__label">Country of residence *</label>
+                            <select id="pais" name="pais" class="form__select" required>
+                                <option value="">Select a country</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="USA">USA</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="ciudad" class="form__label">City *</label>
+                            <input type="text" id="ciudad" name="ciudad" class="form__input" required>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="motivacion" class="form__label">Why do you want to join? *</label>
+                        <textarea id="motivacion" name="motivacion" class="form__textarea" required></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__checkbox-group">
+                            <label class="form__checkbox-item">
+                                <input type="checkbox" name="voluntario" value="si">
+                                <span>I'm interested in volunteering</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="form__button">JOIN NOW</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 2rem;">
+            <p style="margin: 0;">&copy; 2024 Somos+ Movement - For a prosperous and free Cuba.</p>
+            <div style="display: flex; gap: 1.5rem;">
+                <a href="#" class="nav__link" style="padding: 0; color: var(--white); opacity: 1; font-size: 1.5rem;"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="nav__link" style="padding: 0; color: var(--white); opacity: 1; font-size: 1.5rem;"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="nav__link" style="padding: 0; color: var(--white); opacity: 1; font-size: 1.5rem;"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.7; text-align: left; width: 100%;">By registering,
+            you accept our privacy policy.</p>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

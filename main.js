@@ -75,4 +75,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // Select elements to animate (Cards, Hero text, and Sections)
   const animateElements = document.querySelectorAll('.feature-card, .card, article, section .container > div, .hero__title, .hero__subtitle, .hero__actions, .registration');
   animateElements.forEach(el => observer.observe(el));
+  // Pointer illumination effect for any feature-card or element needing a spotlight
+  const lightEffectElements = document.querySelectorAll('.feature-card');
+  lightEffectElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      el.style.setProperty('--mouse-x', `${x}px`);
+      el.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
 });

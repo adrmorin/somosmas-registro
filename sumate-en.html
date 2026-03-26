@@ -17,31 +17,32 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <a href="./index-en.html" class="header__logo">
+            <a href="./" class="header__logo">
                 <img src="./assets/logo-icon.jpg" alt="Somos+ Logo" width="32" height="32">
                 <span>Somos+</span>
             </a>
             <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
-        <a href="./blog-en.html" class="nav__link">Blog</a>
-        <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">About Us</a>
-        <a href="./clubes-en.html" class="nav__link">Clubs</a>
-        <a href="http://bajanda.live" class="nav__link">Packages</a>
-        <a href="#" class="nav__link">Documents</a>
-        <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
-        <a href="./colabora-en.html" class="nav__cta--donate" style="text-decoration: none;">DONATE NOW</a>
-        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
-            <a href="./sumate.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">ES</a>
-            <span style="opacity: 0.3;">|</span>
-            <a href="./sumate-en.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
-        </div>
-      </nav>
+                <a href="./blog-en.html" class="nav__link">Blog</a>
+                <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">About Us</a>
+                <a href="./clubes-en.html" class="nav__link">Clubs</a>
+                <a href="http://bajanda.live" class="nav__link">Packages</a>
+                <a href="./documentos-en.html" class="nav__link">Documents</a>
+                <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+                <a href="./sumate-en.html" class="nav__cta--join" style="text-decoration: none;">JOIN US</a>
+                <a href="./colabora-en.html" class="nav__cta--donate" style="text-decoration: none;">DONATE NOW</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./sumate.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./sumate-en.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
+                </div>
+            </nav>
         </div>
     </header>
 
     <main class="container">
         <section class="registration">
             <div class="registration__visual">
-                <img src="./assets/header.jpg" alt="Somos+ Movement" class="registration__visual-img">
+                <img src="./assets/header_v2.png" alt="Somos+ Movement" class="registration__visual-img">
                 <div class="registration__visual-overlay"></div>
                 <div class="registration__quote">
                     <blockquote>"Change is not a promise, it is our collective action."</blockquote>
@@ -67,36 +68,98 @@
 
                     <div class="form__row--two">
                         <div class="form__group">
-                            <label for="pais" class="form__label">Country of residence *</label>
-                            <select id="pais" name="pais" class="form__select" required>
-                                <option value="">Select a country</option>
-                                <option value="Cuba">Cuba</option>
-                                <option value="USA">USA</option>
-                                <option value="Spain">Spain</option>
-                                <option value="Other">Other</option>
-                            </select>
+                            <label for="telefono" class="form__label">Phone/WhatsApp (with country code) *</label>
+                            <input type="tel" id="telefono" name="telefono" class="form__input" required>
                         </div>
                         <div class="form__group">
-                            <label for="ciudad" class="form__label">City *</label>
+                            <label for="ciudad" class="form__label">City / Current Place of Residence *</label>
                             <input type="text" id="ciudad" name="ciudad" class="form__input" required>
                         </div>
                     </div>
 
-                    <div class="form__group">
-                        <label for="motivacion" class="form__label">Why do you want to join? *</label>
-                        <textarea id="motivacion" name="motivacion" class="form__textarea" required></textarea>
-                    </div>
-
-                    <div class="form__group">
-                        <div class="form__checkbox-group">
-                            <label class="form__checkbox-item">
-                                <input type="checkbox" name="voluntario" value="si">
-                                <span>I'm interested in volunteering</span>
-                            </label>
+                    <div class="form__row--two">
+                        <div class="form__group">
+                            <label for="profesion" class="form__label">Profession / Trade / Skills *</label>
+                            <input type="text" id="profesion" name="profesion" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="grupo_trabajo" class="form__label">Which working group would you like to join?</label>
+                            <select id="grupo_trabajo" name="grupo_trabajo" class="form__select">
+                                <option value="">Select working group</option>
+                                <option value="diseno_programacion">Design & Programming</option>
+                                <option value="comunicadores_redes">Communicators & Social Media Activists</option>
+                                <option value="finanzas">Finance (Fundraising)</option>
+                                <option value="logistica">Logistics</option>
+                                <option value="derechos_humanos">Human Rights / Legal</option>
+                            </select>
                         </div>
                     </div>
 
-                    <button type="submit" class="form__button">JOIN NOW</button>
+                    <div class="form__group">
+                        <label for="ayuda" class="form__label">In what way could you help with our objective today?</label>
+                        <textarea id="ayuda" name="ayuda" class="form__textarea"></textarea>
+                    </div>
+
+                    <div class="form__row--two">
+                        <div class="form__group">
+                            <label for="twitter" class="form__label">Twitter (X) Profile (Optional)</label>
+                            <input type="text" id="twitter" name="twitter" class="form__input"
+                                placeholder="@username or URL">
+                        </div>
+                        <div class="form__group">
+                            <label for="facebook" class="form__label">Facebook Profile (Optional)</label>
+                            <input type="text" id="facebook" name="facebook" class="form__input"
+                                placeholder="Profile URL">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label">Which languages do you speak?</label>
+                        <div class="form__checkbox-group">
+                            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="español">
+                                Spanish</label>
+                            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="ingles">
+                                English</label>
+                            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="frances">
+                                French</label>
+                            <label class="form__checkbox-item"><input type="checkbox" name="idioma" value="otro">
+                                Others</label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="motivacion" class="form__label">Why do you want to join us? *</label>
+                        <textarea id="motivacion" name="motivacion" class="form__textarea" required></textarea>
+                    </div>
+
+                    <div class="form__row--two">
+                        <div class="form__group">
+                            <label class="form__label">How do you prefer us to contact you?</label>
+                            <div class="form__checkbox-group" style="flex-direction: column;">
+                                <label class="form__checkbox-item"><input type="checkbox" name="relacion" value="email">
+                                    Email</label>
+                                <label class="form__checkbox-item"><input type="checkbox" name="relacion"
+                                        value="whatsapp"> WhatsApp</label>
+                                <label class="form__checkbox-item"><input type="checkbox" name="relacion"
+                                        value="telegram"> Telegram</label>
+                                <label class="form__checkbox-item"><input type="checkbox" name="relacion"
+                                        value="llamada"> Phone Call</label>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">I wish to subscribe to:</label>
+                            <div class="form__checkbox-group" style="flex-direction: column;">
+                                <label class="form__checkbox-item"><input type="checkbox" name="suscripcion"
+                                        value="boletin"> Weekly Newsletter</label>
+                                <label class="form__checkbox-item"><input type="checkbox" name="suscripcion"
+                                        value="noticias"> Breaking News</label>
+                                <label class="form__checkbox-item"><input type="checkbox" name="suscripcion"
+                                        value="clubes"> Local Club Updates</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="form__button" style="width: 100%; margin-top: 2rem;">JOIN NOW</button>
                 </form>
             </div>
         </section>
@@ -114,7 +177,7 @@
         </div>
         <nav class="footer__nav container">
             <a href="https://www.somosmascuba.com/ideas-y-principios/">IDEAS & PRINCIPLES</a>
-            <a href="https://www.somosmascuba.com/reglamento-para-las-elecciones-presidenciales-del-movimiento-politico-somos/">REGULATIONS</a>
+            <a href="https://www.somosmascuba.com/reglamento/">REGULATIONS</a>
             <a href="https://www.somosmascuba.com/">OFFICIAL WEB</a>
         </nav>
     </footer>

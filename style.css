@@ -425,6 +425,10 @@ input[type="checkbox"]:hover {
     transform-origin: left;
 }
 
+.btn-outline:hover i {
+    transform: translateX(5px);
+}
+
 /* Homepage - Hero */
 .hero {
     position: relative;
@@ -477,18 +481,74 @@ input[type="checkbox"]:hover {
 
 .feature-card {
     padding: var(--spacing-lg);
-    background: var(--white);
+    background: var(--accent-orange);
+    color: var(--white);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--box-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     text-align: center;
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 0 0 2px rgba(255, 109, 0, 0.2);
     border-color: transparent !important;
+}
+
+/* Feature Card Image Overlay */
+.feature-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/header_v2.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Decreased transparency as requested */
+    z-index: -1;
+    pointer-events: none;
+    transition: transform 0.5s ease;
+}
+
+/* Pointer Illumination Effect */
+.feature-card::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: radial-gradient(
+        600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(255, 255, 255, 0.2),
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.feature-card:hover::after {
+    opacity: 1;
+}
+
+.feature-card:hover::before {
+    transform: scale(1.1);
+}
+
+.feature-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card .feature-card__title {
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-card .feature-card__description {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Coordinators Grid */
@@ -746,6 +806,25 @@ section .container>div,
 .nav__cta--donate:hover {
     transform: translateY(-2px) scale(1.05);
     color: var(--accent-orange);
+}
+
+.nav__cta--join {
+    background: var(--accent-orange);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(255, 109, 0, 0.3);
+    text-decoration: none;
+}
+
+.nav__cta--join:hover {
+    transform: translateY(-2px) scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 20px rgba(255, 109, 0, 0.4);
 }
 
 @keyframes pulse-donate {

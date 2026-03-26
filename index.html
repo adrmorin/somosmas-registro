@@ -17,7 +17,7 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <a href="./index.html" class="header__logo">
+      <a href="./" class="header__logo">
         <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
         <span>Somos+</span>
       </a>
@@ -26,11 +26,12 @@
         <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos</a>
         <a href="./clubes.html" class="nav__link">Clubes</a>
         <a href="http://bajanda.live" class="nav__link">Paquetes</a>
-        <a href="#" class="nav__link">Documentos</a>
-        <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+        <a href="./documentos.html" class="nav__link">Documentos</a>
+        <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
         <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+        <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
         <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
-            <a href="./index.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+            <a href="./" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
             <span style="opacity: 0.3;">|</span>
             <a href="./index-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
         </div>
@@ -43,8 +44,11 @@
     <section class="hero">
       <img src="./assets/hero_v3.png" alt="Havana Malecon at Sunset" class="hero__img">
       <div class="hero__content container">
-        <img src="./assets/SOMOS-MAS-ElCambioEresTu-LOGO.png" alt="Somos+ - El Cambio Eres Tú"
-          style="max-width: 250px; height: auto; margin-bottom: 2rem; display: block; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));">
+        <a href="./" style="display: block; width: fit-content; text-decoration: none;">
+          <img src="./assets/SOMOS-MAS-ElCambioEresTu-LOGO.png" alt="Somos+ - El Cambio Eres Tú"
+            style="max-width: 250px; height: auto; margin-bottom: 2rem; display: block; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2)); transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
         <span class="card__category" style="color: var(--white); opacity: 0.9;">MOVIMIENTO POLÍTICO</span>
         <h1 class="hero__title">Somos el presente de Cuba</h1>
         <p class="hero__subtitle">Trabajamos por una Cuba democrática, próspera y libre. Nuestra visión es
@@ -191,9 +195,10 @@
         </article>
       </div>
       <div style="text-align: center; margin-top: 3rem;">
-        <a href="https://www.somosmascuba.com/" class="form__button"
-          style="background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); box-shadow: none;">VER
-          TODAS LAS NOTICIAS</a>
+        <a href="https://www.somosmascuba.com/" class="btn-outline"
+          style="padding: 1rem 3rem; border-radius: 2rem; font-size: 1rem; display: inline-flex; align-items: center; gap: 0.75rem;">
+          VER TODAS LAS NOTICIAS <i class="fa-solid fa-arrow-right-long" style="transition: transform 0.3s ease;"></i>
+        </a>
       </div>
     </section>
   </main>

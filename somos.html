@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="¿Quiénes somos? Conoce el Movimiento Político Somos+ Cuba, nuestra misión, visión y a nuestro fundador Eliécer Ávila.">
+    <title>¿Quiénes somos? - Somos+ Cuba</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .somos-hero {
+            background-color: var(--primary-blue);
+            padding-block: 6rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--accent-orange);
+        }
+
+        .somos-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/header_v2.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .somos-hero h1, .somos-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .somos-content {
+            padding-block: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .somos-text-highlight {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: var(--medium-text);
+            border-left: 4px solid var(--accent-orange);
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .somos-img-container {
+            position: relative;
+        }
+
+        .somos-img-container::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100px;
+            height: 100px;
+            background: var(--accent-orange);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .somos-img {
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: var(--box-shadow);
+            border: 8px solid var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .somos-video-cta {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 2rem;
+            margin-block: 4rem;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 900px) {
+            .somos-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .somos-text-highlight {
+                padding-left: 0;
+                border-left: none;
+                border-top: 4px solid var(--accent-orange);
+                padding-top: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog.html" class="nav__link">Blog</a>
+                <a href="./somos.html" class="nav__link" style="color: var(--accent-orange); font-weight: 700;">Somos</a>
+                <a href="./clubes.html" class="nav__link">Clubes</a>
+                <a href="./documentos.html" class="nav__link">Documentos</a>
+                <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
+                <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+                <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./somos.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./somos-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="somos-hero">
+            <div class="container">
+                <h1>¿Quiénes somos?</h1>
+                <p style="text-transform: uppercase; letter-spacing: 2px; font-weight: 600; opacity: 0.8;">Fundamentos y Visión</p>
+            </div>
+        </section>
+
+        <section class="container somos-content">
+            <div>
+                <div class="somos-text-highlight">
+                    Somos + se funda como un movimiento que convoca a todos los cubanos que deseen participar en la aventura hermosa y difícil de ayudar a construir un país moderno, próspero y libre.
+                </div>
+                <p style="color: var(--dark-text); line-height: 1.8; font-size: 1.15rem; margin-bottom: 2rem;">
+                    Los hombres y mujeres que integramos este movimiento, asumimos el reto y la responsabilidad que la historia nos impone: Demostrar que en el seno de nuestra maltrecha sociedad aún existen personas que pueden levantar la bandera de la esperanza y emprender, tanto en lo material como lo espiritual, la reconstrucción de la patria.
+                </p>
+            </div>
+            <div class="somos-img-container">
+                <img src="./assets/eliecer_real.png" alt="Ing. Eliecer Avila" class="somos-img">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="somos-video-cta">
+                <h3 style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;">Presentación del Movimiento</h3>
+                <p style="color: var(--medium-text); font-size: 1.2rem; margin-bottom: 2rem;">Fundador, Eliécer Ávila, presenta al movimiento.</p>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <a href="https://www.youtube.com/@somosmascubaoficial" target="_blank" class="form__button" style="display: inline-flex; align-items: center; gap: 1rem; padding-inline: 3rem;">
+                        <i class="fa-brands fa-youtube" style="font-size: 1.5rem;"></i> VER CANAL OFICIAL
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="text-align: center; margin-block: 6rem; padding: 4rem; background: var(--primary-blue); border-radius: 3rem; color: var(--white); box-shadow: var(--box-shadow);">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Únete a nuestra causa</h2>
+            <p style="max-width: 700px; margin: 0 auto 2.5rem; font-size: 1.2rem; opacity: 0.9;">Estamos escribiendo una nueva página en la historia de Cuba. Sé parte del cambio positivo que todos soñamos.</p>
+            <a href="./sumate.html" class="form__button" style="background: var(--white); color: var(--primary-blue); padding-inline: 4rem;">SÚMATE AQUÍ</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="https://www.facebook.com/somosmascuba" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/somosmascuba" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="https://www.youtube.com/somosmascubaoficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/somosmascuba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@somosmascuba.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

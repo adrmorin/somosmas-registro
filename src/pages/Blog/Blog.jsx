@@ -36,17 +36,41 @@ export default function Blog() {
                 <div style={{ background: 'var(--white)', borderRadius: '1.5rem', padding: '2rem', boxShadow: 'var(--box-shadow)', marginBottom: '2rem' }}>
                     <h3 style={{ color: 'var(--primary-blue)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Síguenos</h3>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                        <a href="https://www.facebook.com/SomosMasCuba" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
+                        <a href="https://www.facebook.com/somosmascuba" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
                             <div style={{ width: '40px', height: '40px', background: '#1877F2', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
                                 <i className="fa-brands fa-facebook"></i>
                             </div>
-                            /SomosMasCuba
+                            /somosmascuba
                         </a>
-                        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
-                            <div style={{ width: '40px', height: '40px', background: 'var(--primary-blue)', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
+                        <a href="https://x.com/somosmascuba" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
+                            <div style={{ width: '40px', height: '40px', background: '#000000', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
+                                <i className="fa-brands fa-x-twitter"></i>
+                            </div>
+                            @somosmascuba
+                        </a>
+                        <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
+                            <div style={{ width: '40px', height: '40px', background: '#db4437', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
+                                <i className="fa-brands fa-google-plus-g"></i>
+                            </div>
+                            Somos+ Google+
+                        </a>
+                        <a href="https://www.youtube.com/somosmascubaoficial" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
+                            <div style={{ width: '40px', height: '40px', background: '#FF0000', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
                                 <i className="fa-brands fa-youtube"></i>
                             </div>
-                            Somos+ Canal Oficial
+                            Youtube Channel
+                        </a>
+                        <a href="https://instagram.com/somosmascuba" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
+                            <div style={{ width: '40px', height: '40px', background: '#E4405F', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
+                                <i className="fa-brands fa-instagram"></i>
+                            </div>
+                            @somosmascuba
+                        </a>
+                        <a href="mailto:info@somosmascuba.com" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', color: 'var(--medium-text)', fontWeight: 600, fontSize: '0.9rem' }}>
+                            <div style={{ width: '40px', height: '40px', background: '#607d8b', borderRadius: '50%', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem' }}>
+                                <i className="fa-solid fa-envelope"></i>
+                            </div>
+                            Email
                         </a>
                     </div>
                 </div>

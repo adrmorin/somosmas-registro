@@ -11,9 +11,8 @@ export default function Header() {
         </Link>
         <nav className="header__nav" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', whiteSpace: 'nowrap' }}>
           <Link to="/blog" className="nav__link">Blog</Link>
-          <Link to="https://www.somosmascuba.com/quienes-somos/" className="nav__link">Somos</Link>
+          <Link to="/somos" className="nav__link">Somos</Link>
           <Link to="/clubes" className="nav__link">Clubes</Link>
-          <Link to="/paquetes" className="nav__link">Paquetes</Link>
           <Link to="/documentos" className="nav__link">Documentos</Link>
           <Link to="https://erp.somosmascuba.com/accounts/login/" className="nav__link">Portal</Link>
           <Link to="/sumate" className="nav__cta--join" style={{ textDecoration: 'none' }}>SÚMATE</Link>

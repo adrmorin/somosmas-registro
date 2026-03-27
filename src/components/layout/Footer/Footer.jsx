@@ -6,10 +6,12 @@ export default function Footer() {
             <div className="footer__container container">
                 <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
                 <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-                    <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i className="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/somosmascuba" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/somosmascuba" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.youtube.com/somosmascubaoficial" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i></a>
+                    <a href="https://instagram.com/somosmascuba" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:info@somosmascuba.com"><i className="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <nav className="footer__nav container">

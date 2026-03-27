@@ -861,10 +861,10 @@ section .container>div,
 /* FIX RESPONSIVE MOBILE MODE (SIZES REDUCED BY ~30%)                        */
 /* ========================================================================= */
 @media (max-width: 900px) {
-    /* Global scaling trick: reduce 1rem from 16px to ~11.5px (approx 30% less) */
-    /* This automatically scales down ALL typography, paddings, margins defined in rem natively */
+    /* Global scaling trick: increase root size to ~13.5px (improved readability) */
+    /* This automatically scales up ALL typography, paddings, margins defined in rem natively */
     html {
-        font-size: 11.5px !important; 
+        font-size: 13.5px !important; 
     }
 
     /* Override arbitrary inline grids that break mobile */
@@ -923,9 +923,9 @@ section .container>div,
 }
 
 @media (max-width: 600px) {
-    /* Scale down slightly more for very small tiny screens */
+    /* Scale down slightly more for very small tiny screens, but with better readability */
     html {
-        font-size: 11px !important;
+        font-size: 13px !important;
     }
 
     /* Ensure smaller paddings for very small devices */

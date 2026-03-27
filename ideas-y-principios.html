@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ideas y Principios del Movimiento Somos+ Cuba. Un proyecto para construir un país moderno, próspero y libre.">
+    <title>Ideas y Principios - Somos+ Cuba</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .page-hero {
+            background-color: var(--primary-blue);
+            padding-block: 5rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/header_v2.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .page-hero h1, .page-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-hero p {
+            font-weight: 600;
+            opacity: 0.9;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 1rem;
+        }
+
+        .intro-quote {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            line-height: 1.4;
+            padding-inline: 1rem;
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 6rem;
+        }
+
+        .principle-card {
+            background: var(--white);
+            border-radius: 2rem;
+            padding: 3rem 2rem;
+            box-shadow: var(--box-shadow);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .principle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .principle-icon {
+            font-size: 2.5rem;
+            color: var(--accent-orange);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .principle-title {
+            color: var(--primary-blue);
+            font-size: 1.6rem;
+            margin-bottom: 1.25rem;
+            font-weight: 800;
+        }
+
+        .principle-content {
+            color: var(--medium-text);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .signature-section {
+            text-align: center;
+            margin-block: 6rem;
+            padding: 4rem;
+            background: #f8f9fa;
+            border-radius: 3rem;
+        }
+
+        .signature-img {
+            height: 120px;
+            margin-bottom: 1rem;
+            mix-blend-mode: multiply;
+        }
+
+        .rights-box {
+            background: var(--primary-blue);
+            color: var(--white);
+            border-radius: 2.5rem;
+            padding: 4rem;
+            margin-bottom: 6rem;
+        }
+
+        .rights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .rights-column h3 {
+            color: var(--accent-orange);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rights-list li {
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .rights-list i {
+            margin-top: 0.25rem;
+            color: var(--accent-orange);
+        }
+
+        @media (max-width: 900px) {
+            .rights-grid {
+                grid-template-columns: 1fr;
+            }
+            .principles-grid {
+                grid-template-columns: 1fr;
+            }
+            .page-hero {
+                padding-block: 3rem;
+            }
+            .intro-quote {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog.html" class="nav__link">Blog</a>
+                <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos</a>
+                <a href="./clubes.html" class="nav__link">Clubes</a>
+                <a href="http://bajanda.live" class="nav__link">Paquetes</a>
+                <a href="./documentos.html" class="nav__link">Documentos</a>
+                <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
+                <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+                <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./ideas-y-principios.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./ideas-y-principios-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-hero">
+            <div class="container">
+                <p>Nuestra Visión</p>
+                <h1>Ideas y Principios</h1>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="intro-quote">
+                "Tenemos derecho a compartir nuestras ideas, a decir lo que pensamos y a defender con determinación el futuro que queremos."
+            </div>
+
+            <div class="principles-grid">
+                <article class="principle-card">
+                    <i class="fa-solid fa-landmark-flag principle-icon"></i>
+                    <h2 class="principle-title">Política</h2>
+                    <div class="principle-content">
+                        Creemos que todos los ciudadanos debemos elegir a quienes nos gobiernan mediante el voto directo y secreto, amparados en una nueva constitución que restituya la autonomía de los poderes ejecutivo, legislativo y judicial.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-users-rays principle-icon"></i>
+                    <h2 class="principle-title">Fuerzas Políticas</h2>
+                    <div class="principle-content">
+                        Aspiramos a una sociedad donde las fuerzas políticas estén equilibradas horizontalmente. Creemos en una Ley de Partidos que garantice transparencia en campañas y finanzas, donde solo el pueblo otorgue el poder mediante el voto.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-comment-dots principle-icon"></i>
+                    <h2 class="principle-title">Libertad de Expresión</h2>
+                    <div class="principle-content">
+                        No puede existir una verdadera democracia sin la más amplia libertad de expresión. Esta libertad no puede depender de ideologías, credos, preferencias sexuales ni situación económica.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-chart-line principle-icon"></i>
+                    <h2 class="principle-title">Economía</h2>
+                    <div class="principle-content">
+                        Defendemos una economía gestionada por los ciudadanos, regida por leyes justas que incentiven la inversión, generen empleos y frenen la emigración masiva mediante salarios reales y dignos.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-graduation-cap principle-icon"></i>
+                    <h2 class="principle-title">Educación</h2>
+                    <div class="principle-content">
+                        La educación debe ser un derecho prioritario, universal y sin adoctrinamientos. Buscamos un sistema laico que permita a cada individuo crecer material y espiritualmente con docentes retribuidos dignamente.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-stethoscope principle-icon"></i>
+                    <h2 class="principle-title">Salud</h2>
+                    <div class="principle-content">
+                        El acceso médico es un baluarte. Debe permitirse la coexistencia de servicios públicos y privados, dignificando el trabajo de los galenos con pagos decorosos y eliminando mecanismos de explotación.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-wheat-awn principle-icon"></i>
+                    <h2 class="principle-title">Agricultura</h2>
+                    <div class="principle-content">
+                        Proponemos un modelo que devuelva al campesino el derecho a decidir sobre su producción y propiedad real sobre su tierra, eliminando el control burocrático sobre lo que se siembra y se vende.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-shield-halved principle-icon"></i>
+                    <h2 class="principle-title">Seguridad Local</h2>
+                    <div class="principle-content">
+                        El ejército debe ser mínimo, profesional y leal a la constitución, no a familias. Nuestro Ministerio del Interior debe estar para proteger a todo el pueblo en su cotidianidad democrática, no para la represión.
+                    </div>
+                </article>
+
+                <article class="principle-card">
+                    <i class="fa-solid fa-globe principle-icon"></i>
+                    <h2 class="principle-title">Internet</h2>
+                    <div class="principle-content">
+                        La conexión masiva y de alta velocidad es vital. Rechazamos cualquier política de control sobre la red y defendemos el derecho legítimo de cada cubano a estar conectado con el resto del mundo.
+                    </div>
+                </article>
+            </div>
+
+            <div class="rights-box">
+                <div class="rights-grid">
+                    <div class="rights-column">
+                        <h3>Deberes</h3>
+                        <ul class="rights-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Contribuir con ejemplo y acciones a la salud de la organización.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Hacer el mayor esfuerzo por formarse adecuadamente.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Practicar el respeto y la tolerancia ante la diferencia de ideas.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Abonar mensualmente la cuota voluntaria.</li>
+                        </ul>
+                    </div>
+                    <div class="rights-column">
+                        <h3>Derechos</h3>
+                        <ul class="rights-list">
+                            <li><i class="fa-solid fa-circle-plus"></i> Recibir información regular de actividades y finanzas.</li>
+                            <li><i class="fa-solid fa-circle-plus"></i> Voz y voto para elegir la presidencia cada cuatro años.</li>
+                            <li><i class="fa-solid fa-circle-plus"></i> Voz y voto para aprobar o desaprobar cambios de política.</li>
+                            <li><i class="fa-solid fa-circle-plus"></i> Participación absolutamente voluntaria en cualquier acción.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <img src="./assets/eliecer_final_signature.png" alt="Firma Eliecer Ávila" class="signature-img">
+                <p style="font-weight: 700; color: var(--primary-blue); font-size: 1.25rem;">Ing. Eliecer L. Ávila Cicilia</p>
+                <p style="color: var(--light-text);">Fundador Somos+</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

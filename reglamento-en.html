@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Election Regulations of the Somos+ Cuba Political Movement. Transparency, democracy, and civic participation.">
+    <title>Election Regulations - Somos+ Cuba</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .reglamento-hero {
+            background-color: var(--primary-blue);
+            padding-block: 4rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .reglamento-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/header_v2.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .reglamento-hero h1, .reglamento-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .reglamento-hero p {
+            font-weight: 600;
+            opacity: 0.9;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+            border-left: 6px solid var(--accent-orange);
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateX(10px);
+        }
+
+        .article-number {
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 1.25rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .article-content {
+            color: var(--dark-text);
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .preamble {
+            background: #f8f9fa;
+            border-radius: 2rem;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+
+        @media (max-width: 900px) {
+            .article-card {
+                padding: 1.8rem;
+            }
+            .reglamento-hero {
+                padding-block: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./index-en.html" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog-en.html" class="nav__link">Blog</a>
+                <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos</a>
+                <a href="./clubes-en.html" class="nav__link">Clubs</a>
+                <a href="http://bajanda.live" class="nav__link">Packages</a>
+                <a href="./documentos-en.html" class="nav__link">Documents</a>
+                <a href="./sumate-en.html" class="nav__cta--join" style="text-decoration: none;">JOIN US</a>
+                <a href="./colabora-en.html" class="nav__cta--donate" style="text-decoration: none;">DONATE</a>
+                <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./reglamento.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./reglamento-en.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="reglamento-hero">
+            <div class="container">
+                <p>Official Document</p>
+                <h1>Election Regulations</h1>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="preamble">
+                <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Regulations for the Presidential Elections of the Somos+ Political Movement</h3>
+                <p style="font-weight: 600; color: var(--accent-orange); margin-bottom: 2rem;">(Agreement C.E. / April 3, 2021)</p>
+                <p>This regulation is the result of an extensive and prolonged deliberative process carried out across all structures of the Movement, to adapt the regulations approved in 2017 to the current conditions characterized by the significant growth and rise of our Movement as well as the new geopolitical scenario. These regulations aim to guarantee a transparent process that faithfully expresses the will of our members.</p>
+                <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Analysis and correction of its predecessor by the Executive Council.</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Analysis and corrections of the new proposal in the Expanded Council of the Movement.</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Analysis and corrections in meetings with all members.</li>
+                </ul>
+            </div>
+
+            <div class="reglamento-articles">
+                <article class="article-card">
+                    <span class="article-number">Article 1</span>
+                    <div class="article-content">
+                        Every four years, the Executive Council will call for free and democratic elections to elect or re-elect the position of President of the Somos+ Political Movement, with two months' notice before the electoral process.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Article 2</span>
+                    <div class="article-content">
+                        All members of the Movement with at least three months of membership have the right to vote.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Article 3</span>
+                    <div class="article-content">
+                        An "Electoral Commission" will be formed to oversee and organize the entire process, as well as to count the votes and announce the final results.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Article 4</span>
+                    <div class="article-content">
+                        The Electoral Commission ensures that every candidate has the possibility and media coverage to campaign, guaranteeing equal conditions for each candidate.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Article 5</span>
+                    <div class="article-content">
+                        Any active member who complies with our "Ideas and Principles" can compete for the position of President if they meet the following requirements:
+                        <ul style="margin-top: 1rem; list-style: circle; padding-left: 1.5rem;">
+                            <li>Be born in Cuba.</li>
+                            <li>Be over 18 years old.</li>
+                            <li>Be an example of ethical and professional authority.</li>
+                            <li>Have no less than two years of membership in the Movement.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Additional articles would be translated here following the same structure -->
+                <p style="text-align: center; color: var(--light-text); font-style: italic; margin-block: 2rem;">Full articles available in the Spanish version.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Somos+ Movement - For a free and prosperous Cuba.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reglamento para las Elecciones Presidenciales del Movimiento Político Somos+ Cuba. Transparencia, democracia y participación ciudadana.">
+    <title>Reglamento Electoral - Somos+ Cuba</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .reglamento-hero {
+            background-color: var(--primary-blue);
+            padding-block: 4rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .reglamento-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/header_v2.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .reglamento-hero h1, .reglamento-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .reglamento-hero p {
+            font-weight: 600;
+            opacity: 0.9;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+            border-left: 6px solid var(--accent-orange);
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateX(10px);
+        }
+
+        .article-number {
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 1.25rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .article-content {
+            color: var(--dark-text);
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .preamble {
+            background: #f8f9fa;
+            border-radius: 2rem;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+        
+        @media (max-width: 900px) {
+            .article-card {
+                padding: 1.8rem;
+            }
+            .reglamento-hero {
+                padding-block: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog.html" class="nav__link">Blog</a>
+                <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos</a>
+                <a href="./clubes.html" class="nav__link">Clubes</a>
+                <a href="http://bajanda.live" class="nav__link">Paquetes</a>
+                <a href="./documentos.html" class="nav__link">Documentos</a>
+                <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
+                <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+                <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./reglamento.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./reglamento-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="reglamento-hero">
+            <div class="container">
+                <p>Documento Oficial</p>
+                <h1>Reglamento Electoral</h1>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="preamble">
+                <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Reglamento para las Elecciones Presidenciales del Movimiento Político Somos+</h3>
+                <p style="font-weight: 600; color: var(--accent-orange); margin-bottom: 2rem;">(Acuerdo C.E. / 3 de abril de 2021)</p>
+                <p>El presente reglamento es resultado de un amplio y prolongado proceso deliberativo llevado a cabo en todas las estructuras del Movimiento, para atemperar el reglamento aprobado en 2017 a las condiciones actuales caracterizadas por el gran crecimiento y auge de nuestro Movimiento así como el nuevo escenario geopolítico. Este reglamento tiene como objetivo garantizar un proceso transparente que exprese fielmente la voluntad de nuestros miembros.</p>
+                <p style="margin-top: 1rem;">Para ello se ha procedido a los siguientes pasos:</p>
+                <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Análisis y corrección de su precedente por parte del Consejo Ejecutivo (Acuerdo #01 C.N./19 de febrero de 2017).</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Análisis y correcciones de la nueva propuesta de reglamento en el Consejo Ampliado del Movimiento.</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Análisis y correcciones en encuentros del Consejo Ampliado con todos sus miembros.</li>
+                </ul>
+            </div>
+
+            <div class="reglamento-articles">
+                <article class="article-card">
+                    <span class="article-number">Artículo 1</span>
+                    <div class="article-content">
+                        Cada cuatro años el Consejo Ejecutivo convocará, en voz del secretario de Comunicaciones, a elecciones libres y democráticas para elegir o reelegir el cargo de Presidente del Movimiento Político Somos+, con dos meses de antelación al proceso electoral.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 2</span>
+                    <div class="article-content">
+                        Tienen derecho al voto todos los miembros del Movimiento con un mínimo de tres meses de antigüedad en sus fechas de alta.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 3</span>
+                    <div class="article-content">
+                        A propuesta del Consejo Ejecutivo se conformará una «Comisión Electoral» que, a partir de su programación, tendrá la responsabilidad de rectorar y organizar metodológicamente todo el proceso así como contabilizar los votos y dar a conocer los resultados finales en %. Esta comisión estará conformada por:
+                        <ul style="margin-top: 1rem; list-style: circle; padding-left: 1.5rem;">
+                            <li>Jefe de Comisión</li>
+                            <li>1 rector en Cuba</li>
+                            <li>1 rector en Estados Unidos</li>
+                            <li>1 rector en América Latina</li>
+                            <li>1 rector en Europa</li>
+                            <li>Figuras honorables invitadas u observadores externos</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem; font-style: italic;">(Los rectores de cada región serán escogidos por el Consejo Ampliado del Movimiento: Clubes de cada región)</p>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 4</span>
+                    <div class="article-content">
+                        La Comisión Electoral regula y garantiza que todo candidato tenga la posibilidad y la cobertura mediática para hacer campaña (blog, debates, artículos, redes sociales), con el propósito de hacer pública la agenda presidencial, garantizando de esta manera igualdad de condiciones para cada candidato.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 5</span>
+                    <div class="article-content">
+                        Todo miembro activo que, dentro del marco constitucional de nuestras «Ideas y Principios», cumpla con los requisitos, podrá competir por el cargo de Presidente:
+                        <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                            <li>1. Ser nacido en Cuba.</li>
+                            <li>2. Ser mayor de 18 años de edad.</li>
+                            <li>3. Ser ejemplo de autoridad ética, cívica y profesional.</li>
+                            <li>4. Tener no menos de dos años de militancia dentro del Movimiento.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 6</span>
+                    <div class="article-content">
+                        La cantidad de candidatos deberá estar en proporción con el número de miembros activos del Movimiento y/o con la estructura territorial del mismo. Como mínimo se requerirán dos candidatos para llevarse a efecto las elecciones.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 7</span>
+                    <div class="article-content">
+                        El uso de recursos financieros para la elaboración de mensajes con que cada candidato cuenta para su campaña, corre a cargo del Movimiento, en correspondencia con nuestra política financiera y disponibilidad de recursos.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 8</span>
+                    <div class="article-content">
+                        El Presidente saliente no debe emitir criterios favorables o desfavorables sobre ninguno de los candidatos durante el proceso eleccionario.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 9</span>
+                    <div class="article-content">
+                        Habiendo cumplido con los requisitos establecidos, el ganador será quien haya sido elegido democráticamente alcanzando el cincuenta por ciento más uno del total de los votos. En caso de que ningún candidato alcance dicha cifra se efectuará otra ronda una semana después.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 10</span>
+                    <div class="article-content">
+                        El anuncio oficial del ganador se hará en dos formatos: escrito y audiovisual, y debe ser publicado en el blog del Movimiento sin demora. Cuarenta y cinco días posteriores a la publicación comienza el pleno ejercicio de las funciones del nuevo Presidente.
+                    </div>
+                </article>
+
+                <article class="article-card" style="border-left-color: var(--primary-blue);">
+                    <span class="article-number">Artículo 11</span>
+                    <div class="article-content">
+                        La persona elegida para el cargo de Presidente podrá ejercer sus funciones por un período de cuatro años, teniendo la posibilidad de ser reelegida solo por cuatro años más.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 12</span>
+                    <div class="article-content">
+                        Las elecciones para Presidente del Movimiento se efectuarán entre el primero y el quince de octubre del último año del Presidente en funciones.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 13</span>
+                    <div class="article-content">
+                        El Presidente electo tiene la facultad de seleccionar un nuevo Consejo Ejecutivo o ratificar el existente. Cargos estratégicos como informática y finanzas requerirán el voto favorable del 75% del Consejo Ampliado.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 14</span>
+                    <div class="article-content">
+                        El Presidente saliente queda habilitado para ocupar cualquier otro cargo dentro del Movimiento y formará parte del nuevo Consejo del Movimiento en calidad de asesor.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 15</span>
+                    <div class="article-content">
+                        Todos los Presidentes salientes que transfieran su cargo al siguiente Presidente electo ostentarán en lo adelante el título de Presidente Honorífico del Movimiento Político Somos+.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 16</span>
+                    <div class="article-content">
+                        La historia política del Movimiento y la información referente a los procesos eleccionarios debe ser documentada y protegida para las nuevas generaciones.
+                    </div>
+                </article>
+
+                <article class="article-card" style="margin-bottom: 6rem; border-left-color: var(--primary-blue);">
+                    <span class="article-number">Artículo 17</span>
+                    <div class="article-content">
+                        El presente reglamento solo puede ser modificado mediante un proceso democrático con la aprobación del 75% del Consejo Ampliado y la consulta general de todos los miembros.
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

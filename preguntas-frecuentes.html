@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Preguntas Frecuentes del Movimiento Somos+ Cuba. Respuestas sobre nuestra visión, financiación y objetivos para una Cuba libre.">
+    <title>Preguntas Frecuentes - Somos+ Cuba</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .faq-hero {
+            background-color: var(--primary-blue);
+            padding-block: 5rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .faq-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/header_v2.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .faq-hero h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto 6rem;
+            padding-inline: 1rem;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-hover);
+            border-color: var(--accent-orange);
+        }
+
+        .faq-question {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .faq-question i {
+            color: var(--accent-orange);
+            margin-top: 0.2rem;
+        }
+
+        .faq-answer {
+            color: var(--medium-text);
+            line-height: 1.7;
+            font-size: 1.1rem;
+            padding-left: 2.5rem;
+        }
+
+        .nav-btn-animated {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .nav-btn-animated:hover {
+            transform: translateY(-5px) scale(1.05) !important;
+            background-color: #ff9500 !important;
+            box-shadow: 0 8px 25px rgba(255,128,0,0.5) !important;
+        }
+
+        .nav-btn-animated:hover i {
+            transform: rotate(15deg);
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .faq-hero h1 {
+                font-size: 2.5rem;
+            }
+            .faq-question {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./index.html" class="header__logo">
+                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog.html" class="nav__link">Blog</a>
+                <a href="./somos.html" class="nav__link">Somos</a>
+                <a href="./clubes.html" class="nav__link">Clubes</a>
+                <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
+                <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+                <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./preguntas-frecuentes.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./preguntas-frecuentes-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="faq-hero">
+            <div class="container">
+                <h1>Preguntas Frecuentes</h1>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; flex-wrap: wrap; position: relative; z-index: 10;">
+                    <a href="./somos.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.1s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-arrow-left"></i> VOLVER
+                    </a>
+                    <a href="./ideas-y-principios.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.2s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-lightbulb"></i> IDEAS Y PRINCIPIOS
+                    </a>
+                    <a href="./reglamento.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.3s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-gavel"></i> REGLAMENTO ELECTORAL
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>¿Cómo puedo unirme al Movimiento Somos+?</span>
+                </div>
+                <div class="faq-answer">
+                    La integración se realiza a través del registro en nuestro portal oficial o contactando directamente a nuestro equipo. Fomentamos la creación de "clubes" locales tanto en la isla como en el exterior para que cada miembro tenga un espacio de participación activa.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>¿Cómo planean cambiar el sistema en Cuba?</span>
+                </div>
+                <div class="faq-answer">
+                    Nuestra estrategia se basa en una reforma educativa profunda y el empoderamiento ciudadano. Buscamos una transición pacífica hacia la democracia mediante la formación de valores universales y la presión civil consciente, fundamentada en propuestas concretas para el país.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <span>¿Cómo se financia el movimiento?</span>
+                </div>
+                <div class="faq-answer">
+                    Somos+ se sostiene exclusivamente mediante contribuciones voluntarias de sus miembros y simpatizantes. Mantener nuestra soberanía ideológica es vital, por lo que no aceptamos fondos de gobiernos extranjeros ni fundaciones políticas externas.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>¿Es Somos+ un partido político?</span>
+                </div>
+                <div class="faq-answer">
+                    Nos definimos como un movimiento de vanguardia política y cívica. Aunque aspiramos a participar en un sistema democrático plural de partidos en el futuro, nuestra función actual es preparar a la ciudadanía y proponer una visión de nación moderna.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>¿Cuál es su postura sobre la educación y la salud?</span>
+                </div>
+                <div class="faq-answer">
+                    Defendemos modelos plurales y de alta calidad. En educación, buscamos eliminar el adoctrinamiento estatal. En salud, proponemos que el Estado garantice el acceso básico mientras se permite la coexistencia de servicios que dignifiquen el trabajo de los profesionales.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <span>¿Qué papel juega el exilio en el movimiento?</span>
+                </div>
+                <div class="faq-answer">
+                    El exilio es un pilar fundamental. Su labor es visibilizar la realidad cubana ante el mundo, movilizar apoyo internacional y servir de soporte logístico y moral para quienes trabajan por el cambio desde dentro de la isla.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Por una Cuba próspera y libre.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="https://www.facebook.com/somosmascuba" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/somosmascuba" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@somosmasnet" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/somosmascuba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@somosmascuba.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.nav-btn-animated');
+            
+            buttons.forEach(btn => {
+                const icon = btn.querySelector('i');
+                
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+                    
+                    if (icon) {
+                        icon.style.transform = `translate(${x * 0.4}px, ${y * 0.4}px) rotate(15deg)`;
+                    }
+                });
+                
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                    if (icon) {
+                        icon.style.transform = '';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

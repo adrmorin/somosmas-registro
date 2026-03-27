@@ -23,17 +23,16 @@
             </a>
             <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
         <a href="./blog-en.html" class="nav__link">Blog</a>
-        <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">About Us</a>
+        <a href="./somos-en.html" class="nav__link">About Us</a>
         <a href="./clubes-en.html" class="nav__link">Clubs</a>
-        <a href="./documentos-en.html" class="nav__link">Documents</a>
         <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
         <a href="./sumate-en.html" class="nav__cta--join" style="text-decoration: none;">JOIN US</a>
         <a href="./colabora-en.html" class="nav__cta--donate" style="text-decoration: none;">DONATE NOW</a>
-        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
-            <a href="./blog.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">ES</a>
-            <span style="opacity: 0.3;">|</span>
-            <a href="./blog-en.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
-        </div>
+                <div class="nav__lang-selector">
+                    <a href="./blog.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">ES</a>
+                    <span style="opacity: 0.3; color: var(--white);">|</span>
+                    <a href="./blog-en.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
+                </div>
       </nav>
         </div>
     </header>
@@ -59,48 +58,59 @@
                     the scenarios proposed by various AI models on the democratic future of the island, economic
                     reconstruction, and the fundamental role of civil society and the exile community in this historic
                     process.</p>
-                <a href="#"
-                    style="color: var(--accent-orange); text-decoration: none; font-weight: 800; display: inline-block; margin-top: 1.5rem; border-bottom: 2px solid var(--accent-orange);">KEEP
-                    READING →</a>
+                <a href="#" class="blog-card__link" style="font-size: 1.15rem;">
+                    KEEP READING <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </article>
 
             <!-- Articles Grid -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+            <div class="blog-grid">
                 <article class="blog-card">
-                    <img src="./assets/blog_proyecto_cuba.png"
-                        style="width: 100%; height: 240px; border-radius: 1.5rem; object-fit: cover; margin-bottom: 1.5rem;">
-                    <span class="card__category">POLITICS</span>
-                    <h3 style="margin-top: 1rem; color: var(--primary-blue);">Signing of the 'Cuba Project' in Europe
-                    </h3>
-                    <p style="font-size: 0.95rem; margin-top: 0.75rem; color: var(--medium-text);">Exile organizations
-                        call for a massive signing to promote citizen participation.</p>
+                    <div class="blog-card__img-container">
+                        <img src="./assets/blog_proyecto_cuba.png" class="blog-card__img" alt="Cuba Project">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__tag">POLITICS</span>
+                        <h3 class="blog-card__title">Signing of the 'Cuba Project' in Europe</h3>
+                        <p class="blog-card__excerpt">Exile organizations call for a massive signing to promote citizen participation and international recognition of the Cuban cause.</p>
+                        <a href="#" class="blog-card__link">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </article>
 
                 <article class="blog-card">
-                    <img src="./assets/blog_libertad.png"
-                        style="width: 100%; height: 240px; border-radius: 1.5rem; object-fit: cover; margin-bottom: 1.5rem;">
-                    <span class="card__category">RIGHTS</span>
-                    <h3 style="margin-top: 1rem; color: var(--primary-blue);">Protest for Freedom of Expression</h3>
-                    <p style="font-size: 0.95rem; margin-top: 0.75rem; color: var(--medium-text);">New wave of campaigns
-                        against the harassment of independent journalists and activists on the island.</p>
+                    <div class="blog-card__img-container">
+                        <img src="./assets/blog_libertad.png" class="blog-card__img" alt="Freedom of expression">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__tag">RIGHTS</span>
+                        <h3 class="blog-card__title">Protest for Freedom of Expression</h3>
+                        <p class="blog-card__excerpt">New wave of global campaigns against the systematic harassment of independent journalists and human rights activists on the island.</p>
+                        <a href="#" class="blog-card__link">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </article>
 
                 <article class="blog-card">
-                    <img src="./assets/blog_protestas.png"
-                        style="width: 100%; height: 240px; border-radius: 1.5rem; object-fit: cover; margin-bottom: 1.5rem;">
-                    <span class="card__category">SOCIETY</span>
-                    <h3 style="margin-top: 1rem; color: var(--primary-blue);">International Support Mobilization</h3>
-                    <p style="font-size: 0.95rem; margin-top: 0.75rem; color: var(--medium-text);">Cities around the
-                        world join the demand for freedom for the Cuban people.</p>
+                    <div class="blog-card__img-container">
+                        <img src="./assets/blog_protestas.png" class="blog-card__img" alt="International support">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__tag">SOCIETY</span>
+                        <h3 class="blog-card__title">International Support Mobilization</h3>
+                        <p class="blog-card__excerpt">Cities around the world join the unanimous demand for freedom for the Cuban people in an unprecedented show of global solidarity.</p>
+                        <a href="#" class="blog-card__link">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </article>
 
                 <article class="blog-card">
-                    <img src="./assets/hands_v2.png"
-                        style="width: 100%; height: 240px; border-radius: 1.5rem; object-fit: cover; margin-bottom: 1.5rem;">
-                    <span class="card__category">EQUIPMENT</span>
-                    <h3 style="margin-top: 1rem; color: var(--primary-blue);">New Somos+ Clubs in Spain</h3>
-                    <p style="font-size: 0.95rem; margin-top: 0.75rem; color: var(--medium-text);">The movement
-                        continues to grow in the diaspora with new local coordinators.</p>
+                    <div class="blog-card__img-container">
+                        <img src="./assets/hands_v2.png" class="blog-card__img" alt="New clubs">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__tag">TEAM</span>
+                        <h3 class="blog-card__title">New Somos+ Clubs in Spain</h3>
+                        <p class="blog-card__excerpt">The movement continues to expand strongly in the diaspora, establishing new headquarters and local coordinations to strengthen our international network.</p>
+                        <a href="#" class="blog-card__link">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -124,54 +134,36 @@
                 <h3
                     style="color: var(--primary-blue); margin-bottom: 1.5rem; font-size: 1.2rem; border-left: 4px solid var(--accent-orange); padding-left: 1rem;">
                     Social Media</h3>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="https://www.facebook.com/somosmascuba" target="_blank"
-                        style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--medium-text); font-weight: 600; font-size: 0.9rem;">
-                        <div
-                            style="width: 40px; height: 40px; background: #1877F2; border-radius: 50%; color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                <div class="sidebar-social">
+                    <a href="https://www.facebook.com/somosmascuba" target="_blank" class="sidebar-social__link">
+                        <div class="sidebar-social__icon" style="background: #1877F2;">
                             <i class="fa-brands fa-facebook"></i>
                         </div>
                         /SomosMasCuba
                     </a>
-                    <a href="https://x.com/somosmascuba" target="_blank"
-                        style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--medium-text); font-weight: 600; font-size: 0.9rem;">
-                        <div
-                            style="width: 40px; height: 40px; background: #000000; border-radius: 50%; color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                    <a href="https://x.com/somosmascuba" target="_blank" class="sidebar-social__link">
+                        <div class="sidebar-social__icon" style="background: #000000;">
                             <i class="fa-brands fa-x-twitter"></i>
                         </div>
                         @SomosMasCuba
                     </a>
-                    <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank"
-                        style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--medium-text); font-weight: 600; font-size: 0.9rem;">
-                        <div
-                            style="width: 40px; height: 40px; background: #db4437; border-radius: 50%; color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
-                            <i class="fa-brands fa-google-plus-g"></i>
-                        </div>
-                        Somos+ Google+
-                    </a>
-                    <a href="https://www.youtube.com/somosmascubaoficial" target="_blank"
-                        style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--medium-text); font-weight: 600; font-size: 0.9rem;">
-                        <div
-                            style="width: 40px; height: 40px; background: #FF0000; border-radius: 50%; color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                    <a href="https://www.youtube.com/somosmascubaoficial" target="_blank" class="sidebar-social__link">
+                        <div class="sidebar-social__icon" style="background: #FF0000;">
                             <i class="fa-brands fa-youtube"></i>
                         </div>
                         Youtube Channel
                     </a>
-                    <a href="https://instagram.com/somosmascuba" target="_blank"
-                        style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--medium-text); font-weight: 600; font-size: 0.9rem;">
-                        <div
-                            style="width: 40px; height: 40px; background: #E4405F; border-radius: 50%; color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                    <a href="https://instagram.com/somosmascuba" target="_blank" class="sidebar-social__link">
+                        <div class="sidebar-social__icon" style="background: #E4405F;">
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                         @SomosMasCuba
                     </a>
-                    <a href="mailto:info@somosmascuba.com"
-                        style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--medium-text); font-weight: 600; font-size: 0.9rem;">
-                        <div
-                            style="width: 40px; height: 40px; background: #607d8b; border-radius: 50%; color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                    <a href="mailto:info@somosmascuba.com" class="sidebar-social__link">
+                        <div class="sidebar-social__icon" style="background: #607d8b;">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
-                        Email
+                        Official Email
                     </a>
                 </div>
             </div>
@@ -181,13 +173,12 @@
     <footer class="footer">
         <div class="footer__container container">
             <p>&copy; 2024 Somos+ Movement - For a prosperous and free Cuba.</p>
-            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
-                <a href="https://www.facebook.com/somosmascuba" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://x.com/somosmascuba" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="https://www.youtube.com/somosmascubaoficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://instagram.com/somosmascuba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="mailto:info@somosmascuba.com"><i class="fa-solid fa-envelope"></i></a>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/somosmascuba" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/somosmascuba" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/somosmascubaoficial" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/somosmascuba" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@somosmascuba.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>

@@ -171,6 +171,33 @@
                 font-size: 1.25rem;
             }
         }
+        .nav-btn-animated {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .nav-btn-animated:hover {
+            transform: translateY(-5px) scale(1.05) !important;
+            background-color: #ff9500 !important;
+            box-shadow: 0 8px 25px rgba(255,128,0,0.5) !important;
+        }
+
+        .nav-btn-animated:hover i {
+            transform: rotate(15deg);
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
@@ -183,9 +210,8 @@
             </a>
             <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
                 <a href="./blog.html" class="nav__link">Blog</a>
-                <a href="https://www.somosmascuba.com/quienes-somos/" class="nav__link">Somos</a>
+                <a href="./somos.html" class="nav__link">Somos</a>
                 <a href="./clubes.html" class="nav__link">Clubes</a>
-                <a href="./documentos.html" class="nav__link">Documentos</a>
                 <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
                 <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
                 <a href="https://erp.somosmascuba.com/accounts/login/" class="nav__link">Portal</a>
@@ -203,6 +229,17 @@
             <div class="container">
                 <p>Nuestra Visión</p>
                 <h1>Ideas y Principios</h1>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; flex-wrap: wrap; position: relative; z-index: 10;">
+                    <a href="./somos.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.1s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-arrow-left"></i> VOLVER
+                    </a>
+                    <a href="./preguntas-frecuentes.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.2s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-circle-question"></i> PREGUNTAS FRECUENTES
+                    </a>
+                    <a href="./reglamento.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.3s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-gavel"></i> REGLAMENTO ELECTORAL
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -330,6 +367,36 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.nav-btn-animated');
+            
+            buttons.forEach(btn => {
+                const icon = btn.querySelector('i');
+                
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    // Suave atracción magnética para el botón
+                    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+                    
+                    // Efecto más pronunciado para el icono dentro del botón
+                    if (icon) {
+                        icon.style.transform = `translate(${x * 0.4}px, ${y * 0.4}px) rotate(15deg)`;
+                    }
+                });
+                
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                    if (icon) {
+                        icon.style.transform = '';
+                    }
+                });
+            });
+        });
+    </script>
     <script src="./main.js" type="module"></script>
 </body>
 

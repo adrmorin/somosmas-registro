@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const animateElements = document.querySelectorAll('.feature-card, .card, article, section .container > div, .hero__title, .hero__subtitle, .hero__actions, .registration');
   animateElements.forEach(el => observer.observe(el));
   // Pointer illumination effect for any feature-card or element needing a spotlight
-  const lightEffectElements = document.querySelectorAll('.feature-card');
+  const lightEffectElements = document.querySelectorAll('.feature-card, .doc-card, .blog-card');
   lightEffectElements.forEach(el => {
     el.addEventListener('mousemove', (e) => {
       const rect = el.getBoundingClientRect();
@@ -85,6 +85,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
       el.style.setProperty('--mouse-x', `${x}px`);
       el.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+
+  // Magnetic Effect for premium buttons and cards
+  const magneticElements = document.querySelectorAll('.magnetic-btn, .nav__cta--join, .nav__cta--donate, .nav__link');
+  magneticElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const distanceX = e.clientX - centerX;
+      const distanceY = e.clientY - centerY;
+
+      // Small movement for subtle premium feel
+      el.style.transform = `translate(${distanceX * 0.15}px, ${distanceY * 0.15}px)`;
+    });
+
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'translate(0, 0)';
     });
   });
 });

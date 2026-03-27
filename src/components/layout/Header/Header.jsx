@@ -13,7 +13,6 @@ export default function Header() {
           <Link to="/blog" className="nav__link">Blog</Link>
           <Link to="/somos" className="nav__link">Somos</Link>
           <Link to="/clubes" className="nav__link">Clubes</Link>
-          <Link to="/documentos" className="nav__link">Documentos</Link>
           <Link to="https://erp.somosmascuba.com/accounts/login/" className="nav__link">Portal</Link>
           <Link to="/sumate" className="nav__cta--join" style={{ textDecoration: 'none' }}>SÚMATE</Link>
           <Link to="/colabora" className="nav__cta--donate" style={{ textDecoration: 'none' }}>COLABORA</Link>

@@ -62,13 +62,6 @@ const Somos = () => {
                         }}>
                             Los hombres y mujeres que integramos este movimiento, asumimos el reto y la responsabilidad que la historia nos impone: Demostrar que en el seno de nuestra maltrecha sociedad aún existen personas que pueden levantar la bandera de la esperanza y emprender, tanto en lo material como lo espiritual, la reconstrucción de la patria.
                         </p>
-                        <div style={{ background: '#f8f9fa', padding: '2rem', borderRadius: '1.5rem', border: '1px solid rgba(0,0,0,0.05)' }}>
-                            <h3 style={{ color: 'var(--primary-blue)', marginBottom: '1rem' }}>Presentación Oficial</h3>
-                            <p style={{ color: 'var(--medium-text)', marginBottom: '1.5rem' }}>Fundador, Eliécer Ávila, presenta al movimiento.</p>
-                            <a href="https://www.youtube.com/@somosmascubaoficial" target="_blank" rel="noopener noreferrer" className="form__button" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
-                                <i className="fa-brands fa-youtube"></i> VER CANAL OFICIAL
-                            </a>
-                        </div>
                     </div>
                     <div style={{ position: 'relative' }}>
                         <div style={{
@@ -82,18 +75,83 @@ const Somos = () => {
                             borderRadius: '50%',
                             zIndex: 1
                         }}></div>
-                        <img 
-                            src="./assets/eliecer_real.png" 
-                            alt="Eliécer Ávila" 
+                        <video 
+                            controls 
+                            poster="./assets/eliecer_real.png" 
                             style={{
                                 width: '100%',
                                 borderRadius: '2rem',
                                 boxShadow: 'var(--box-shadow)',
                                 border: '8px solid var(--white)',
                                 position: 'relative',
-                                zIndex: 2
+                                zIndex: 2,
+                                display: 'block',
+                                objectFit: 'cover'
                             }} 
-                        />
+                        >
+                            <source src="./assets/Eliécer Ávila presenta el movimiento SOMOS +_1920x1080.mp4" type="video/mp4" />
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                            <p style={{ color: 'var(--medium-text)', fontSize: '0.9rem', marginBottom: '1rem', fontStyle: 'italic' }}>
+                                Fundador, Eliécer Ávila, presenta al movimiento.
+                            </p>
+                            <a 
+                                href="https://www.youtube.com/@somosmasnet" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="form__button" 
+                                style={{ 
+                                    display: 'inline-flex', 
+                                    alignItems: 'center', 
+                                    gap: '0.5rem', 
+                                    padding: '0.5rem 1.5rem', 
+                                    fontSize: '0.8rem', 
+                                    borderRadius: '1rem',
+                                    transform: 'scale(0.85)'
+                                }}
+                            >
+                                <i className="fa-brands fa-youtube" style={{ fontSize: '1rem' }}></i> VER CANAL OFICIAL
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style={{ paddingBottom: '2rem' }}>
+                    <h2 style={{ color: 'var(--primary-blue)', fontSize: '1.5rem', marginBottom: '1rem', borderBottom: '3px solid var(--accent-orange)', width: 'fit-content', paddingBottom: '0.3rem' }}>
+                        Documentos Oficiales
+                    </h2>
+                    <p style={{ color: 'var(--medium-text)', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: '800px', marginBottom: '1.5rem' }}>
+                        Aquí encontrarás los documentos oficiales del Movimiento Somos+, incluyendo el reglamento, el manifiesto y los principios rectores.
+                    </p>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
+                        <a href="/reglamento"
+                            style={{ display: 'block', background: 'var(--white)', borderRadius: '1.5rem', padding: '1.5rem 1rem', boxShadow: 'var(--box-shadow)', textDecoration: 'none', transition: 'transform 0.3s ease', border: '1px solid rgba(0,0,0,0.05)' }}
+                            onMouseOver={(e) => e.currentTarget.style.transform='translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform='translateY(0)'}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>📄</div>
+                            <h3 style={{ color: 'var(--primary-blue)', fontSize: '1rem', marginBottom: '0.5rem' }}>Reglamento Electoral</h3>
+                            <p style={{ color: 'var(--medium-text)', fontSize: '0.8rem', lineHeight: 1.5 }}>La normativa que rige las elecciones presidenciales y el funcionamiento democrático.</p>
+                            <div style={{ marginTop: '1rem', color: 'var(--accent-orange)', fontWeight: 700, fontSize: '0.75rem' }}>LEER REGLAMENTO →</div>
+                        </a>
+
+                        <a href="/ideas-y-principios"
+                            style={{ display: 'block', background: 'var(--white)', borderRadius: '1.5rem', padding: '1.5rem 1rem', boxShadow: 'var(--box-shadow)', textDecoration: 'none', transition: 'transform 0.3s ease', border: '1px solid rgba(0,0,0,0.05)' }}
+                            onMouseOver={(e) => e.currentTarget.style.transform='translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform='translateY(0)'}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>💡</div>
+                            <h3 style={{ color: 'var(--primary-blue)', fontSize: '1rem', marginBottom: '0.5rem' }}>Ideas y Principios</h3>
+                            <p style={{ color: 'var(--medium-text)', fontSize: '0.8rem', lineHeight: 1.5 }}>Los valores éticos y pilares ideológicos básicos que definen nuestra identidad.</p>
+                            <div style={{ marginTop: '1rem', color: 'var(--accent-orange)', fontWeight: 700, fontSize: '0.75rem' }}>VER PRINCIPIOS →</div>
+                        </a>
+                        
+                        <a href="https://www.somosmascuba.com/preguntas-frecuentes/" target="_blank" rel="noopener noreferrer"
+                            style={{ display: 'block', background: 'var(--white)', borderRadius: '1.5rem', padding: '1.5rem 1rem', boxShadow: 'var(--box-shadow)', textDecoration: 'none', transition: 'transform 0.3s ease', border: '1px solid rgba(0,0,0,0.05)' }}
+                            onMouseOver={(e) => e.currentTarget.style.transform='translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform='translateY(0)'}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>❓</div>
+                            <h3 style={{ color: 'var(--primary-blue)', fontSize: '1rem', marginBottom: '0.5rem' }}>Preguntas Frecuentes</h3>
+                            <p style={{ color: 'var(--medium-text)', fontSize: '0.8rem', lineHeight: 1.5 }}>Respuestas a las dudas más comunes sobre el movimiento y su estructura.</p>
+                            <div style={{ marginTop: '1rem', color: 'var(--accent-orange)', fontWeight: 700, fontSize: '0.75rem' }}>VER FAQ →</div>
+                        </a>
                     </div>
                 </div>
 

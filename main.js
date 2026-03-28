@@ -5,8 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
 
-      const formData = new FormData(form);
+       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
+
+      // Password matching validation
+      if (data.password && data.confirm_password && data.password !== data.confirm_password) {
+        alert(document.documentElement.lang === 'es' ? 'Las contraseñas no coinciden' : 'Passwords do not match');
+        return;
+      }
 
       // Handle checkboxes (since Object.fromEntries only gets the last value)
       const multiValues = ['idioma', 'relacion', 'suscripcion'];

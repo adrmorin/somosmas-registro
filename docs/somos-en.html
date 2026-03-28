@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Who are we? Get to know the Somos+ Cuba Political Movement, our mission, vision, and our founder Eliécer Ávila.">
+    <title>Who are we? - Somos+ Cuba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .somos-hero {
+            background-color: var(--primary-blue);
+            padding-block: 6rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--accent-orange);
+        }
+
+        .somos-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('/somosmas-registro/assets/header_v2-PegH8h4O.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .somos-hero h1, .somos-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .somos-content {
+            padding-block: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .somos-text-highlight {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: var(--medium-text);
+            border-left: 4px solid var(--accent-orange);
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .somos-img-container {
+            position: relative;
+        }
+
+        .somos-img-container::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100px;
+            height: 100px;
+            background: var(--accent-orange);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .somos-img {
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: var(--box-shadow);
+            border: 8px solid var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .somos-video-cta {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 2rem;
+            margin-block: 4rem;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 900px) {
+            .somos-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .somos-text-highlight {
+                padding-left: 0;
+                border-left: none;
+                border-top: 4px solid var(--accent-orange);
+                padding-top: 1.5rem;
+            }
+        }
+    </style>
+  <script type="module" crossorigin src="/somosmas-registro/assets/main-DfqqVuYV.js"></script>
+  <link rel="stylesheet" crossorigin href="/somosmas-registro/assets/style-DnCIw7UT.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./index-en.html" class="header__logo">
+                <img src="data:image/jpeg;base64,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" alt="Somos+ Logo" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog-en.html" class="nav__link">Blog</a>
+                <a href="./somos-en.html" class="nav__link" style="color: var(--accent-orange); font-weight: 700;">Who We Are</a>
+                <a href="./clubes-en.html" class="nav__link">Clubs</a>
+                <a href="./sumate-en.html" class="nav__cta--join" style="text-decoration: none;">JOIN US</a>
+                <a href="./colabora-en.html" class="nav__cta--donate" style="text-decoration: none;">DONATE</a>
+                <div class="nav-item--dropdown">
+            <a href="./portal-en.html" class="nav__link">Portal <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.3rem;"></i></a>
+            <div class="dropdown-menu">
+                <a href="./portal-en.html" class="dropdown-link">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </a>
+                <a href="./sumate-en.html" class="dropdown-link">
+                    <i class="fa-solid fa-user-plus"></i> Register
+                </a>
+            </div>
+        </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./somos.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./somos-en.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="somos-hero">
+            <div class="container">
+                <h1>Who are we?</h1>
+                <p style="text-transform: uppercase; letter-spacing: 2px; font-weight: 600; opacity: 0.8;">Foundations and Vision</p>
+            </div>
+        </section>
+
+        <section class="container somos-content">
+            <div>
+                <div class="somos-text-highlight">
+                    Somos+ is founded as a movement that calls upon all Cubans who wish to participate in the beautiful and difficult adventure of helping to build a modern, prosperous and free country.
+                </div>
+                <p style="color: var(--dark-text); line-height: 1.8; font-size: 1.15rem; margin-bottom: 2rem;">
+                    The men and women who make up this movement assume the challenge and responsibility that history imposes on us: to demonstrate that within our battered society there are still people who can raise the flag of hope and undertake, both materially and spiritually, the reconstruction of the homeland.
+                </p>
+            </div>
+            <div class="somos-img-container">
+                <video class="somos-img" controls poster="/somosmas-registro/assets/eliecer_real-w0UfYxjP.png" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source src="/somosmas-registro/assets/Eli%C3%A9cer%20%C3%81vila%20presenta%20el%20movimiento%20SOMOS%20__1920x1080-DfWTDljB.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <div style="margin-top: 1rem; text-align: center;">
+                    <p style="color: var(--medium-text); font-size: 0.9rem; margin-bottom: 1rem; font-style: italic;">Founder, Eliécer Ávila, introduces the movement.</p>
+                    <a href="https://www.youtube.com/@somosmasnet" target="_blank" class="form__button" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.5rem; font-size: 0.8rem; border-radius: 1rem; transform: scale(0.85);">
+                        <i class="fa-brands fa-youtube" style="font-size: 1rem;"></i> VIEW OFFICIAL CHANNEL
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container" style="padding-bottom: 2rem;">
+            <h2 style="color: var(--primary-blue); font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 3px solid var(--accent-orange); width: fit-content; padding-bottom: 0.3rem;">
+                Official Documents
+            </h2>
+            <p style="color: var(--medium-text); font-size: 0.9rem; line-height: 1.6; max-width: 800px; margin-bottom: 1.5rem;">
+                Here you will find the official documents of the Somos+ Movement, including our regulations, manifesto, and guiding principles.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <a href="./reglamento-en.html" class="doc-card">
+                    <i class="fa-solid fa-gavel doc-card__icon"></i>
+                    <h3>Election Regulations</h3>
+                    <p>The internal regulations governing the life and democratic functioning of our movement.</p>
+                    <div class="doc-card__cta">
+                        READ REGULATIONS <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="./ideas-y-principios-en.html" class="doc-card">
+                    <i class="fa-solid fa-lightbulb doc-card__icon"></i>
+                    <h3>Ideas & Principles</h3>
+                    <p>The core ethical values and ideological pillars that define our identity and vision for the country.</p>
+                    <div class="doc-card__cta">
+                        VIEW PRINCIPLES <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+                
+                <a href="./preguntas-frecuentes-en.html" class="doc-card">
+                    <i class="fa-solid fa-circle-question doc-card__icon"></i>
+                    <h3>FAQ</h3>
+                    <p>Answers to the most common questions about the operation, funding, and structure of Somos+.</p>
+                    <div class="doc-card__cta">
+                        VIEW FAQ <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="container" style="text-align: center; margin-block: 6rem; padding: 4rem; background: var(--primary-blue); border-radius: 3rem; color: var(--white); box-shadow: var(--box-shadow);">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Join our cause</h2>
+            <p style="max-width: 700px; margin: 0 auto 2.5rem; font-size: 1.2rem; opacity: 0.9;">We are writing a new page in the history of Cuba. Be part of the positive change we all dream of.</p>
+            <a href="./sumate-en.html" class="form__button" style="background: var(--white); color: var(--primary-blue); padding-inline: 4rem;">JOIN US HERE</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Somos+ Movement - For a prosperous and free Cuba.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="https://www.facebook.com/somosmascuba" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/somosmascuba" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="https://www.youtube.com/@somosmasnet" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/somosmascuba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@somosmascuba.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

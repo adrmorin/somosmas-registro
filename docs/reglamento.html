@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reglamento para las Elecciones Presidenciales del Movimiento Político Somos+ Cuba. Transparencia, democracia y participación ciudadana.">
+    <title>Reglamento Electoral - Somos+ Cuba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .reglamento-hero {
+            background-color: var(--primary-blue);
+            padding-block: 4rem;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .reglamento-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('/somosmas-registro/assets/header_v2-PegH8h4O.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .reglamento-hero h1, .reglamento-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .reglamento-hero p {
+            font-weight: 600;
+            opacity: 0.9;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+            border-left: 6px solid var(--accent-orange);
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateX(10px);
+        }
+
+        .article-number {
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 1.25rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .article-content {
+            color: var(--dark-text);
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .preamble {
+            background: #f8f9fa;
+            border-radius: 2rem;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+        
+        @media (max-width: 900px) {
+            .article-card {
+                padding: 1.8rem;
+            }
+            .reglamento-hero {
+                padding-block: 3rem;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-btn-animated {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .nav-btn-animated:hover {
+            transform: translateY(-5px) scale(1.05) !important;
+            background-color: #ff9500 !important;
+            box-shadow: 0 8px 25px rgba(255,128,0,0.5) !important;
+        }
+
+        .nav-btn-animated:hover i {
+            transform: rotate(15deg);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-btn-animated i {
+            transition: transform 0.3s ease;
+        }
+    </style>
+  <script type="module" crossorigin src="/somosmas-registro/assets/main-DfqqVuYV.js"></script>
+  <link rel="stylesheet" crossorigin href="/somosmas-registro/assets/style-DnCIw7UT.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="./" class="header__logo">
+                <img src="data:image/jpeg;base64,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" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav" style="display: flex; align-items: center; gap: 1.5rem; white-space: nowrap;">
+                <a href="./blog.html" class="nav__link">Blog</a>
+                <a href="./somos.html" class="nav__link">Somos</a>
+                <a href="./clubes.html" class="nav__link">Clubes</a>
+                <a href="./sumate.html" class="nav__cta--join" style="text-decoration: none;">SÚMATE</a>
+                <a href="./colabora.html" class="nav__cta--donate" style="text-decoration: none;">COLABORA</a>
+                <a href="./portal.html" class="nav__link">Portal</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem;">
+                    <a href="./reglamento.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./reglamento-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="reglamento-hero">
+            <div class="container">
+                <h1>Reglamento Electoral</h1>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; flex-wrap: wrap; position: relative; z-index: 10;">
+                    <a href="./somos.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.1s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-arrow-left"></i> VOLVER
+                    </a>
+                    <a href="./ideas-y-principios.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.2s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-lightbulb"></i> IDEAS Y PRINCIPIOS
+                    </a>
+                    <a href="./preguntas-frecuentes.html" class="nav-btn-animated" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--accent-orange); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(255,128,0,0.3); animation-delay: 0.3s; position: relative; z-index: 11;">
+                        <i class="fa-solid fa-circle-question"></i> PREGUNTAS FRECUENTES
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="preamble">
+                <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Reglamento para las Elecciones Presidenciales del Movimiento Político Somos+</h3>
+                <p style="font-weight: 600; color: var(--accent-orange); margin-bottom: 2rem;">(Acuerdo C.E. / 3 de abril de 2021)</p>
+                <p>El presente reglamento es resultado de un amplio y prolongado proceso deliberativo llevado a cabo en todas las estructuras del Movimiento, para atemperar el reglamento aprobado en 2017 a las condiciones actuales caracterizadas por el gran crecimiento y auge de nuestro Movimiento así como el nuevo escenario geopolítico. Este reglamento tiene como objetivo garantizar un proceso transparente que exprese fielmente la voluntad de nuestros miembros.</p>
+                <p style="margin-top: 1rem;">Para ello se ha procedido a los siguientes pasos:</p>
+                <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Análisis y corrección de su precedente por parte del Consejo Ejecutivo (Acuerdo #01 C.N./19 de febrero de 2017).</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Análisis y correcciones de la nueva propuesta de reglamento en el Consejo Ampliado del Movimiento.</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-right: 0.75rem;"></i>Análisis y correcciones en encuentros del Consejo Ampliado con todos sus miembros.</li>
+                </ul>
+            </div>
+
+            <div class="reglamento-articles">
+                <article class="article-card">
+                    <span class="article-number">Artículo 1</span>
+                    <div class="article-content">
+                        Cada cuatro años el Consejo Ejecutivo convocará, en voz del secretario de Comunicaciones, a elecciones libres y democráticas para elegir o reelegir el cargo de Presidente del Movimiento Político Somos+, con dos meses de antelación al proceso electoral.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 2</span>
+                    <div class="article-content">
+                        Tienen derecho al voto todos los miembros del Movimiento con un mínimo de tres meses de antigüedad en sus fechas de alta.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 3</span>
+                    <div class="article-content">
+                        A propuesta del Consejo Ejecutivo se conformará una «Comisión Electoral» que, a partir de su programación, tendrá la responsabilidad de rectorar y organizar metodológicamente todo el proceso así como contabilizar los votos y dar a conocer los resultados finales en %. Esta comisión estará conformada por:
+                        <ul style="margin-top: 1rem; list-style: circle; padding-left: 1.5rem;">
+                            <li>Jefe de Comisión</li>
+                            <li>1 rector en Cuba</li>
+                            <li>1 rector en Estados Unidos</li>
+                            <li>1 rector en América Latina</li>
+                            <li>1 rector en Europa</li>
+                            <li>Figuras honorables invitadas u observadores externos</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem; font-style: italic;">(Los rectores de cada región serán escogidos por el Consejo Ampliado del Movimiento: Clubes de cada región)</p>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 4</span>
+                    <div class="article-content">
+                        La Comisión Electoral regula y garantiza que todo candidato tenga la posibilidad y la cobertura mediática para hacer campaña (blog, debates, artículos, redes sociales), con el propósito de hacer pública la agenda presidencial, garantizando de esta manera igualdad de condiciones para cada candidato.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 5</span>
+                    <div class="article-content">
+                        Todo miembro activo que, dentro del marco constitucional de nuestras «Ideas y Principios», cumpla con los requisitos, podrá competir por el cargo de Presidente:
+                        <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                            <li>1. Ser nacido en Cuba.</li>
+                            <li>2. Ser mayor de 18 años de edad.</li>
+                            <li>3. Ser ejemplo de autoridad ética, cívica y profesional.</li>
+                            <li>4. Tener no menos de dos años de militancia dentro del Movimiento.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 6</span>
+                    <div class="article-content">
+                        La cantidad de candidatos deberá estar en proporción con el número de miembros activos del Movimiento y/o con la estructura territorial del mismo. Como mínimo se requerirán dos candidatos para llevarse a efecto las elecciones.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 7</span>
+                    <div class="article-content">
+                        El uso de recursos financieros para la elaboración de mensajes con que cada candidato cuenta para su campaña, corre a cargo del Movimiento, en correspondencia con nuestra política financiera y disponibilidad de recursos.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 8</span>
+                    <div class="article-content">
+                        El Presidente saliente no debe emitir criterios favorables o desfavorables sobre ninguno de los candidatos durante el proceso eleccionario.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 9</span>
+                    <div class="article-content">
+                        Habiendo cumplido con los requisitos establecidos, el ganador será quien haya sido elegido democráticamente alcanzando el cincuenta por ciento más uno del total de los votos. En caso de que ningún candidato alcance dicha cifra se efectuará otra ronda una semana después.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 10</span>
+                    <div class="article-content">
+                        El anuncio oficial del ganador se hará en dos formatos: escrito y audiovisual, y debe ser publicado en el blog del Movimiento sin demora. Cuarenta y cinco días posteriores a la publicación comienza el pleno ejercicio de las funciones del nuevo Presidente.
+                    </div>
+                </article>
+
+                <article class="article-card" style="border-left-color: var(--primary-blue);">
+                    <span class="article-number">Artículo 11</span>
+                    <div class="article-content">
+                        La persona elegida para el cargo de Presidente podrá ejercer sus funciones por un período de cuatro años, teniendo la posibilidad de ser reelegida solo por cuatro años más.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 12</span>
+                    <div class="article-content">
+                        Las elecciones para Presidente del Movimiento se efectuarán entre el primero y el quince de octubre del último año del Presidente en funciones.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 13</span>
+                    <div class="article-content">
+                        El Presidente electo tiene la facultad de seleccionar un nuevo Consejo Ejecutivo o ratificar el existente. Cargos estratégicos como informática y finanzas requerirán el voto favorable del 75% del Consejo Ampliado.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 14</span>
+                    <div class="article-content">
+                        El Presidente saliente queda habilitado para ocupar cualquier otro cargo dentro del Movimiento y formará parte del nuevo Consejo del Movimiento en calidad de asesor.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 15</span>
+                    <div class="article-content">
+                        Todos los Presidentes salientes que transfieran su cargo al siguiente Presidente electo ostentarán en lo adelante el título de Presidente Honorífico del Movimiento Político Somos+.
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-number">Artículo 16</span>
+                    <div class="article-content">
+                        La historia política del Movimiento y la información referente a los procesos eleccionarios debe ser documentada y protegida para las nuevas generaciones.
+                    </div>
+                </article>
+
+                <article class="article-card" style="margin-bottom: 6rem; border-left-color: var(--primary-blue);">
+                    <span class="article-number">Artículo 17</span>
+                    <div class="article-content">
+                        El presente reglamento solo puede ser modificado mediante un proceso democrático con la aprobación del 75% del Consejo Ampliado y la consulta general de todos los miembros.
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Por una Cuba libre y próspera.</p>
+            <div class="footer__social" style="display: flex; gap: 2rem; justify-content: center;">
+                <a href="https://www.facebook.com/somosmascuba" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/somosmascuba" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://plus.google.com/b/107272004533022617651/107272004533022617651" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="https://www.youtube.com/somosmascubaoficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/somosmascuba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@somosmascuba.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.nav-btn-animated');
+            
+            buttons.forEach(btn => {
+                const icon = btn.querySelector('i');
+                
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    // Movimiento magnético suave para el botón
+                    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+                    
+                    // Movimiento más pronunciado para el icono
+                    if (icon) {
+                        icon.style.transform = `translate(${x * 0.4}px, ${y * 0.4}px) rotate(15deg)`;
+                    }
+                });
+                
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                    if (icon) {
+                        icon.style.transform = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

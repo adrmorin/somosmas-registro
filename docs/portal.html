@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de Usuario Somos+ - Gestiona tu compromiso, accede a recursos exclusivos y mantente conectado con el movimiento.">
+    <title>Portal Somos+ - Centro de Acción y Recursos</title>
+    <!-- Same Typography and Base Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" crossorigin href="/somosmas-registro/assets/portal-CSP2GLzK.css">
+  <link rel="stylesheet" crossorigin href="/somosmas-registro/assets/style-DnCIw7UT.css">
+</head>
+
+<body class="portal-body">
+    <header class="header">
+        <div class="header__container container">
+            <a href="./" class="header__logo">
+                <img src="data:image/jpeg;base64,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" alt="Logo Somos+" width="32" height="32">
+                <span>Somos+</span>
+            </a>
+            <nav class="header__nav">
+                <a href="./blog.html" class="nav__link">Blog</a>
+                <a href="./somos.html" class="nav__link">Somos</a>
+                <a href="./clubes.html" class="nav__link">Clubes</a>
+                <div class="nav-item--dropdown">
+                    <a href="./portal.html" class="nav__link">Portal <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.3rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./portal.html" class="dropdown-link">
+                            <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión
+                        </a>
+                        <a href="./sumate.html" class="dropdown-link">
+                            <i class="fa-solid fa-user-plus"></i> Registro
+                        </a>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.3rem 0.8rem; border-radius: 2rem; margin-left: 1rem;">
+                    <a href="./portal.html" class="nav__link" style="padding: 0; color: var(--accent-orange); font-weight: 700;">ES</a>
+                    <span style="opacity: 0.3;">|</span>
+                    <a href="./portal-en.html" class="nav__link" style="padding: 0; color: var(--white); opacity: 0.6;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 1. ONBOARDING (Visible if new user) -->
+        <section id="onboarding" class="onboarding">
+            <div class="onboarding__header">
+                <img src="data:image/jpeg;base64,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" alt="Logo Somos+" class="onboarding__logo">
+                <h1 id="onboardingTitle">Tú eres el Cambio</h1>
+                <p id="onboardingSubtitle">Empieza tu compromiso con un futuro libre para Cuba</p>
+            </div>
+
+
+
+            <form id="onboardingForm" class="form">
+                <div class="form__group">
+                    <label class="form__label">Nombre Completo</label>
+                    <input type="text" class="form__input" placeholder="Tu nombre artístico o real">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Email Institucional/Personal</label>
+                    <input type="email" class="form__input" placeholder="usuario@ejemplo.com">
+                </div>
+                <div class="form__row--two">
+                    <div class="form__group">
+                        <label class="form__label">País de Residencia</label>
+                        <select class="form__select">
+                            <option>Cuba</option>
+                            <option>Estados Unidos</option>
+                            <option>España</option>
+                            <option>México</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Ciudad / Provincia</label>
+                        <input type="text" class="form__input" placeholder="La Habana, Miami, Madrid...">
+                    </div>
+                </div>
+                <div class="form__group" style="margin-top: 1rem;">
+                    <label class="form__label">Áreas de Interés (Selecciona varias)</label>
+                    <div class="form__checkbox-group">
+                        <label class="form__checkbox-item"><input type="checkbox"> Derechos Humanos</label>
+                        <label class="form__checkbox-item"><input type="checkbox"> Economía Libre</label>
+                        <label class="form__checkbox-item"><input type="checkbox"> Logística / Activismo</label>
+                        <label class="form__checkbox-item"><input type="checkbox"> Comunicación Social</label>
+                    </div>
+                </div>
+                <button id="nextBtn" class="form__button" style="width: 100%;">CREAR MI CUENTA</button>
+                <p style="text-align: center; font-size: 0.8rem; color: var(--light-text); margin-top: 1.5rem;">
+                    Recibirás un email de confirmación para validar tu identidad.
+                </p>
+            </form>
+        </section>
+
+        <!-- 2. DASHBOARD (Visible if logged/mocked) -->
+        <div id="dashboard" class="dashboard">
+            <!-- Global Sidebar Navigation -->
+            <aside class="dashboard__sidebar">
+                <div class="sidebar__user">
+                    <div class="user__avatar">JU</div>
+                    <h3 class="user__name">Jose Usuario</h3>
+                    <span class="user__rank">Voluntario</span>
+                    <p style="font-size: 0.8rem; color: var(--light-text); margin-top: 0.5rem;">Miembro desde: Marzo 2024</p>
+                </div>
+
+                <nav class="sidebar__nav">
+                    <a href="#" class="nav-item active" data-module="dashboard-main">
+                        <i class="fa-solid fa-gauge"></i> Dashboard
+                    </a>
+                    <a href="#" class="nav-item" data-module="module-missions">
+                        <i class="fa-solid fa-bullseye"></i> Misiones (Acción)
+                    </a>
+                    <a href="#" class="nav-item" data-module="module-resources">
+                        <i class="fa-solid fa-toolbox"></i> Recursos
+                    </a>
+                    <a href="#" class="nav-item" data-module="module-comm">
+                        <i class="fa-solid fa-comments"></i> Comunicación
+                    </a>
+                    <div style="margin-top: 2.5rem; border-top: 1px solid #eee; padding-top: 1rem;">
+                        <a href="./index.html" class="nav-item nav-item--logout">
+                            <i class="fa-solid fa-right-from-bracket"></i> Salir
+                        </a>
+                    </div>
+                    
+                    <div class="donation-card-mini">
+                        <h3>Apoya el cambio</h3>
+                        <p>Tu colaboración permite que sigamos trabajando por una Cuba libre, democrática y próspera.</p>
+                        <a href="./colabora.html" class="btn-donate-mini">DONAR AHORA</a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main id="dashboardMain" class="dashboard__main">
+                
+                <!-- A. My Profile & Range -->
+                <section id="dashboard-main" class="module-content active">
+                    <h2 class="section-title">Mi Identificación Digital</h2>
+                    <div class="id-card">
+                        <div class="id-card__photo">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div class="id-card__info">
+                            <h3>Jose Usuario</h3>
+                            <p>Ubicación: <strong>Club La Habana Sur</strong></p>
+                            <div style="display: flex; gap: 1rem;">
+                                <button class="btn-outline" style="border-color: white; color: white; padding: 0.5rem 1.5rem; font-size: 0.8rem; border-radius: 2rem;">
+                                    <i class="fa-solid fa-download"></i> Descargar Carné
+                                </button>
+                                <button class="btn-outline" style="border-color: white; color: white; padding: 0.5rem 1.5rem; font-size: 0.8rem; border-radius: 2rem;">
+                                    <i class="fa-solid fa-envelope"></i> Contactar Coordinador
+                                </button>
+                            </div>
+                        </div>
+                        <img src="data:image/jpeg;base64,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" alt="Escudo" class="id-card__badge">
+                    </div>
+
+                    <div style="margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="post">
+                            <h4 style="margin-bottom: 1rem; color: var(--portal-primary);"><i class="fa-solid fa-star" style="color: gold;"></i> Mi Club Local</h4>
+                            <p style="font-size: 0.9rem;">Tu coordinador regional es: <strong>Marta García</strong></p>
+                            <p style="font-size: 0.8rem; color: var(--light-text); margin-top: 0.5rem;">Próxima reunión: Jueves 19:00 (Zoom)</p>
+                            <button class="form__button" style="padding: 0.5rem 1.5rem; font-size: 0.8rem; margin-top: 1rem;">Unirse al Grupo Regional</button>
+                        </div>
+                        <div class="post">
+                            <h4 style="margin-bottom: 1rem; color: var(--portal-primary);"><i class="fa-solid fa-chart-line"></i> Mi Impacto</h4>
+                            <p style="font-size: 0.9rem;">Misiones completadas: <strong>12</strong></p>
+                            <p style="font-size: 0.9rem;">Firmas recogidas: <strong>45</strong></p>
+                            <div style="height: 10px; background: #eee; border-radius: 5px; margin-top: 1.5rem; overflow: hidden;">
+                                <div style="width: 60%; height: 100%; background: var(--portal-accent);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- B. Centre of Action (Missions) -->
+                <section id="module-missions" class="module-content">
+                    <h2 class="section-title">Centro de Acción (Misiones)</h2>
+                    <p style="margin-bottom: 1.5rem; color: var(--medium-text);">Tareas rápidas para hoy. Tu acción individual suma al cambio colectivo.</p>
+                    
+                    <div class="mission-card">
+                        <div class="mission-card__info">
+                            <h4>Misión de WhatsApp</h4>
+                            <p>Comparte el último video sobre la economía en 5 grupos o contactos.</p>
+                        </div>
+                        <button class="btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.8rem; border-radius: 2rem;">Copiar Enlace</button>
+                    </div>
+
+                    <div class="mission-card">
+                        <div class="mission-card__info">
+                            <h4>Petición Activa: Libertad de Prensa</h4>
+                            <p>Firma la declaración interna sobre el incidente de ayer en Santiago.</p>
+                        </div>
+                        <button class="form__button" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Votar/Firmar</button>
+                    </div>
+
+                    <div class="mission-card">
+                        <div class="mission-card__info" style="opacity: 0.5;">
+                            <h4>Voluntariado Logístico (Cerrado)</h4>
+                            <p>Asignación de coordinadores para el evento internacional.</p>
+                        </div>
+                        <span style="font-size: 0.7rem; background: #eee; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">Completado</span>
+                    </div>
+                </section>
+
+                <!-- C. Resource Repository (Toolbox) -->
+                <section id="module-resources" class="module-content">
+                    <h2 class="section-title">Centro de Acción (Caja de Herramientas)</h2>
+                    <p style="margin-bottom: 2rem;">Solo para miembros. Activa el cambio con las herramientas oficiales.</p>
+                    
+                    <div class="resource-grid">
+                        <div class="resource-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <h4>Estatutos</h4>
+                            <p style="font-size: 0.75rem;">Guía legal del movimiento</p>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fa-solid fa-palette"></i>
+                            <h4>Brand Kit</h4>
+                            <p style="font-size: 0.75rem;">Logos, colores y tipografía</p>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <h4>Argumentarios</h4>
+                            <p style="font-size: 0.75rem;">Claves para el debate</p>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h4>Seguridad</h4>
+                            <p style="font-size: 0.75rem;">Manual de protección digital</p>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h4>Formación</h4>
+                            <p style="font-size: 0.75rem;">Talleres de democracia</p>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fa-solid fa-print"></i>
+                            <h4>Cartelería</h4>
+                            <p style="font-size: 0.75rem;">Flyers para imprimir</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- D. Communication Channel -->
+                <section id="module-comm" class="module-content">
+                    <h2 class="section-title">Canal Interno Exclusivo</h2>
+                    <p style="margin-bottom: 2rem;">Aquí llegan las noticias antes que a las redes sociales públicas.</p>
+                    <div class="news-feed">
+                        <article class="post">
+                            <div class="post__header">
+                                <div class="post__avatar">EA</div>
+                                <div class="post__meta">
+                                    <h5>Eliecer Ávila (Fundador)</h5>
+                                    <span>Hace 2 horas • EXCLUSIVO CANAL INTERNO</span>
+                                </div>
+                            </div>
+                            <div class="post__content">
+                                <p>Familia, acabamos de recibir noticias de última hora sobre la reunión en Bruselas. Nuestra delegación ha logrado que se incluya la cláusula de libertad de presos políticos. ¡Es una victoria para todos!</p>
+                                <p style="margin-top: 1rem; color: var(--portal-accent); font-weight: 700;">No compartas esto en redes hasta mañana a las 10:00 AM.</p>
+                            </div>
+                            <div class="post__footer">
+                                <span style="font-size: 0.8rem; color: var(--light-text); display: flex; gap: 1rem;">
+                                    <span><i class="fa-regular fa-eye"></i> 4.5k</span>
+                                    <span><i class="fa-regular fa-comment"></i> 132</span>
+                                </span>
+                            </div>
+                        </article>
+
+                        <div class="secure-buttons">
+                            <a href="#" class="btn-secure btn-telegram"><i class="fa-brands fa-telegram"></i> Grupo de Activismo</a>
+                            <a href="#" class="btn-secure btn-signal"><i class="fa-brands fa-signal"></i> Comunicaciones Seguras</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Privacy & Management Footer -->
+                <footer style="margin-top: 3rem; padding: 2rem; border-top: 1px dashed #ccc; text-align: center;">
+                    <p style="font-size: 0.85rem; color: var(--medium-text);">Esta página está protegida con cifrado SSL de grado militar.</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem;">
+                        <a href="#" style="font-size: 0.75rem; color: var(--light-text);"><i class="fa-solid fa-lock"></i> Cambiar contraseña</a>
+                        <a href="#" style="font-size: 0.75rem; color: var(--error-red);"><i class="fa-solid fa-trash-can"></i> Eliminar mi cuenta y datos</a>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </main>
+
+    <footer class="footer" style="margin-top: 5rem;">
+        <div class="footer__container container">
+            <p>&copy; 2024 Movimiento Somos+ - Plataforma de Participación Ciudadana.</p>
+        </div>
+    </footer>
+
+    <script src="./portal.js"></script>
+</body>
+
+</html>

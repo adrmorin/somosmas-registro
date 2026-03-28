@@ -20,6 +20,7 @@ export default defineConfig({
   base: '/somosmas-registro/',
   plugins: [react()],
   build: {
+    outDir: 'docs',
     rollupOptions: {
       input: getHtmlInput()
     }

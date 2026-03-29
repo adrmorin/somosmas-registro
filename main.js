@@ -113,3 +113,74 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// --- LOGIN MODAL LOGIC (FLOATING) ---
+function createLoginModal() {
+    const modalHtml = `
+        <div id="login-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+                <div class="modal-header">
+                    <img src="./assets/logo-icon.jpg" alt="Somos+" style="width: 50px; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <h2>Iniciar Sesión</h2>
+                    <p>Accede con tu usuario de Somos+</p>
+                </div>
+                <form id="modal-login-form" class="modal-form">
+                    <div class="form-group">
+                        <label>Usuario / Email</label>
+                        <input type="text" placeholder="Tu usuario o email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="modal-btn" style="width: 100%; padding: 1.1rem; background: var(--accent-orange); color: white; border: none; border-radius: 1rem; font-weight: 800; letter-spacing: 0.1rem; cursor: pointer; transition: all 0.3s ease; margin-top: 1.5rem; box-shadow: 0 8px 15px rgba(255, 109, 0, 0.2);">ENTRAR AL PORTAL</button>
+                    <div class="modal-footer">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+    const modal = document.querySelector('#login-modal');
+    const closeBtn = modal.querySelector('.modal-close');
+
+    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    });
+
+    const form = modal.querySelector('#modal-login-form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // Redirect to portal.html after mock login
+        window.location.href = './portal.html';
+    });
+}
+
+function openLoginModal(e) {
+    if (e) e.preventDefault();
+    let modal = document.querySelector('#login-modal');
+    if (!modal) {
+        createLoginModal();
+        modal = document.querySelector('#login-modal');
+    }
+    setTimeout(() => modal.classList.add('active'), 10);
+}
+
+// Global listener for Login links to trigger the floating menu
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+
+    const text = link.textContent.trim();
+    const isLoginLink = text.includes('Iniciar Sesión') || 
+                        text.includes('Login') || 
+                        (link.classList.contains('dropdown-link') && link.getAttribute('href').includes('portal.html'));
+
+    if (isLoginLink) {
+        openLoginModal(e);
+    }
+});

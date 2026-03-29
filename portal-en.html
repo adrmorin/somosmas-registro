@@ -47,58 +47,13 @@
     </header>
 
     <main class="container">
-        <!-- 1. ONBOARDING (Visible if new user) -->
-        <section id="onboarding" class="onboarding">
-            <div class="onboarding__header">
-                <img src="./assets/logo-icon.jpg" alt="Somos+ Logo" class="onboarding__logo">
-                <h1 id="onboardingTitle">You are the Change</h1>
-                <p id="onboardingSubtitle">Start your commitment to a free future for Cuba</p>
-            </div>
-
-
-
-            <form id="onboardingForm" class="form">
-                <div class="form__group">
-                    <label class="form__label">Full Name</label>
-                    <input type="text" class="form__input" placeholder="Your real or artistic name">
-                </div>
-                <div class="form__group">
-                    <label class="form__label">Institutional/Personal Email</label>
-                    <input type="email" class="form__input" placeholder="user@example.com">
-                </div>
-                <div class="form__row--two">
-                    <div class="form__group">
-                        <label class="form__label">Country of Residence</label>
-                        <select class="form__select">
-                            <option>Cuba</option>
-                            <option>United States</option>
-                            <option>Spain</option>
-                            <option>Mexico</option>
-                        </select>
-                    </div>
-                    <div class="form__group">
-                        <label class="form__label">City / Province</label>
-                        <input type="text" class="form__input" placeholder="Havana, Miami, Madrid...">
-                    </div>
-                </div>
-                <div class="form__group" style="margin-top: 1rem;">
-                    <label class="form__label">Areas of Interest (Select several)</label>
-                    <div class="form__checkbox-group">
-                        <label class="form__checkbox-item"><input type="checkbox"> Human Rights</label>
-                        <label class="form__checkbox-item"><input type="checkbox"> Free Economy</label>
-                        <label class="form__checkbox-item"><input type="checkbox"> Logistics / Activism</label>
-                        <label class="form__checkbox-item"><input type="checkbox"> Social Media</label>
-                    </div>
-                </div>
-                <button id="nextBtn" class="form__button" style="width: 100%;">CREATE MY ACCOUNT</button>
-                <p style="text-align: center; font-size: 0.8rem; color: var(--light-text); margin-top: 1.5rem;">
-                    You will receive a confirmation email to validate your identity.
-                </p>
-            </form>
-        </section>
-
-        <!-- 2. DASHBOARD (Visible if logged/mocked) -->
-        <div id="dashboard" class="dashboard">
+        <!-- 1. DASHBOARD (Direct access as requested) -->
+        <div id="dashboard" class="dashboard active">
+<style>
+.dashboard.active { display: grid !important; }
+.onboarding { display: none !important; }
+</style>
+            <!-- Global Sidebar Navigation -->
             <aside class="dashboard__sidebar">
                 <div class="sidebar__user">
                     <div class="user__avatar">JU</div>
@@ -121,7 +76,7 @@
                         <i class="fa-solid fa-comments"></i> Communication
                     </a>
                     <div style="margin-top: 2.5rem; border-top: 1px solid #eee; padding-top: 1rem;">
-                        <a href="./index.html" class="nav-item nav-item--logout">
+                        <a href="./index-en.html" class="nav-item nav-item--logout">
                             <i class="fa-solid fa-right-from-bracket"></i> Logout
                         </a>
                     </div>
@@ -235,6 +190,7 @@
         </div>
     </footer>
 
+    <script src="./main.js"></script>
     <script src="./portal.js"></script>
 </body>
 

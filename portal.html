@@ -47,58 +47,12 @@
     </header>
 
     <main class="container">
-        <!-- 1. ONBOARDING (Visible if new user) -->
-        <section id="onboarding" class="onboarding">
-            <div class="onboarding__header">
-                <img src="./assets/logo-icon.jpg" alt="Logo Somos+" class="onboarding__logo">
-                <h1 id="onboardingTitle">Tú eres el Cambio</h1>
-                <p id="onboardingSubtitle">Empieza tu compromiso con un futuro libre para Cuba</p>
-            </div>
-
-
-
-            <form id="onboardingForm" class="form">
-                <div class="form__group">
-                    <label class="form__label">Nombre Completo</label>
-                    <input type="text" class="form__input" placeholder="Tu nombre artístico o real">
-                </div>
-                <div class="form__group">
-                    <label class="form__label">Email Institucional/Personal</label>
-                    <input type="email" class="form__input" placeholder="usuario@ejemplo.com">
-                </div>
-                <div class="form__row--two">
-                    <div class="form__group">
-                        <label class="form__label">País de Residencia</label>
-                        <select class="form__select">
-                            <option>Cuba</option>
-                            <option>Estados Unidos</option>
-                            <option>España</option>
-                            <option>México</option>
-                        </select>
-                    </div>
-                    <div class="form__group">
-                        <label class="form__label">Ciudad / Provincia</label>
-                        <input type="text" class="form__input" placeholder="La Habana, Miami, Madrid...">
-                    </div>
-                </div>
-                <div class="form__group" style="margin-top: 1rem;">
-                    <label class="form__label">Áreas de Interés (Selecciona varias)</label>
-                    <div class="form__checkbox-group">
-                        <label class="form__checkbox-item"><input type="checkbox"> Derechos Humanos</label>
-                        <label class="form__checkbox-item"><input type="checkbox"> Economía Libre</label>
-                        <label class="form__checkbox-item"><input type="checkbox"> Logística / Activismo</label>
-                        <label class="form__checkbox-item"><input type="checkbox"> Comunicación Social</label>
-                    </div>
-                </div>
-                <button id="nextBtn" class="form__button" style="width: 100%;">CREAR MI CUENTA</button>
-                <p style="text-align: center; font-size: 0.8rem; color: var(--light-text); margin-top: 1.5rem;">
-                    Recibirás un email de confirmación para validar tu identidad.
-                </p>
-            </form>
-        </section>
-
-        <!-- 2. DASHBOARD (Visible if logged/mocked) -->
-        <div id="dashboard" class="dashboard">
+        <!-- 1. DASHBOARD (Direct access as requested) -->
+        <div id="dashboard" class="dashboard active">
+<style>
+.dashboard.active { display: grid !important; }
+.onboarding { display: none !important; }
+</style>
             <!-- Global Sidebar Navigation -->
             <aside class="dashboard__sidebar">
                 <div class="sidebar__user">
@@ -297,6 +251,7 @@
         </div>
     </footer>
 
+    <script src="./main.js"></script>
     <script src="./portal.js"></script>
 </body>
 
